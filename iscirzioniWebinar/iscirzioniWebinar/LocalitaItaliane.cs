@@ -42,7 +42,7 @@ namespace iscirzioniWebinar
 
             provincie.Sort();
 
-            provincie.Insert(0, "Seleziona la provincia");
+            provincie.Insert(0, "");
         }
 
         public List<String> GetProvincie()

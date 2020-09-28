@@ -15,7 +15,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </head>
-    <body style="background-color : lightgrey;">
+    <body style="background-color : lightgrey;" onload="disableDivs()">
         <div class="container" style="background-color : white;">
             <br>
             <a href="https://www.bluenext.it/" target="_blank">
@@ -73,9 +73,16 @@
                         <label>Ricevere crediti formativi &egrave una cosa di tuo interesse?</label>
                     </div>
                     <div class="col-md-4">
-                        <asp:RadioButton class="btn btn-default" id="radioSi" runat="server" OnCheckedChanged="radioSi_CheckedChanged" AutoPostBack=true Text="Si"></asp:RadioButton>
-                        
-                        <asp:RadioButton  class="btn btn-default" id="radioNo" runat="server" OnCheckedChanged="radioNo_CheckedChanged" AutoPostBack=true Text="No"></asp:RadioButton>                       
+                        <div class="row">
+                        <div class="form-check form-check-inline">
+                          <input name="gruppo" type="radio" id="radioSi" runat="server" onclick="valueSi()">
+                          <label for="radioSi">S&igrave</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input name="gruppo" type="radio" runat="server" id="radioNo" onclick="valueNo()">
+                          <label for="radioNo">No</label>
+                        </div>
+                      </div>
                     </div>
                 </div>
                 <div id="siCrediti" runat="server">
@@ -100,7 +107,7 @@
                 </div>
                 <div class="row-md-12">
                     <div class="custom-control custom-checkbox mb-3">
-                        <input type="checkbox" class="custom-control-input" Text="" id="checkPrivacy" runat="server" onchange="javascript:$('#btnSubmit').prop('disabled', !$('#btnSubmit').is(':disabled'));">
+                        <input type="checkbox" class="custom-control-input" Text="" id="checkPrivacy" runat="server" onchange="changeValue()">
                         <label class="custom-control-label" for="checkPrivacy">Ho preso visione della nota <a href='https://fondoperduto.bluenext.it/fondoperduto/Risorse/informativaprivacy.pdf'>Informativa sulla Privacy</a>. Se fai clic su questo pulsante, i tuoi dati saranno inviati all'organizzatore del webinar che li utilizzer&agrave per le comunicazioni relative a questo evento e ad altri suoi servizi.*</label>
                         <div class="invalid-feedback">Campo obbligatorio</div>
                     </div>

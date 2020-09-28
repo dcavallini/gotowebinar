@@ -35,9 +35,9 @@ namespace iscirzioniWebinar {
 		
 		protected System.Web.UI.WebControls.TextBox txtPIVA;
 		
-		protected System.Web.UI.WebControls.RadioButton radioSi;
+		protected System.Web.UI.HtmlControls.HtmlInputRadioButton radioSi;
 		
-		protected System.Web.UI.WebControls.RadioButton radioNo;
+		protected System.Web.UI.HtmlControls.HtmlInputRadioButton radioNo;
 		
 		protected System.Web.UI.HtmlControls.HtmlGenericControl siCrediti;
 		

@@ -14,12 +14,11 @@ namespace iscirzioniWebinar
             string subject = Request.QueryString["subject"];
             string start = Request.QueryString["start"];
             string end = Request.QueryString["end"];
-            string timezone = Request.QueryString["timezone"];
-            string partecipation = Request.QueryString["partecipation"];
+            //string partecipation = Request.QueryString["participation"];
 
             titoloWebinar.InnerText = subject;
-            dataEOra.InnerText = start + " - " + end + " " + timezone;
-            webinarLink.HRef = partecipation;
+            dataEOra.InnerText = start + " - " + end;
+            //webinarLink.HRef = partecipation;
         }
     }
 }

@@ -16,7 +16,5 @@ namespace iscirzioniWebinar {
 		protected System.Web.UI.HtmlControls.HtmlGenericControl titoloWebinar;
 		
 		protected System.Web.UI.HtmlControls.HtmlGenericControl dataEOra;
-		
-		protected System.Web.UI.HtmlControls.HtmlAnchor webinarLink;
 	}
 }

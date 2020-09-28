@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using LogMeIn.GoToCoreLib.Api;
 using Newtonsoft.Json;
@@ -20,8 +21,8 @@ namespace iscirzioniWebinar
 
         public void Page_Load(object sender, EventArgs args)
         {
-            siCrediti.Visible = false;
-            noCrediti.Visible = false;
+            //siCrediti.Visible = false;
+            //noCrediti.Visible = false;
             LocalitaItaliane li = new LocalitaItaliane();
             inputProvincia.DataSource = li.GetProvincie();
             inputProvincia.DataBind();
@@ -64,8 +65,7 @@ namespace iscirzioniWebinar
 
                     string organizor = CreateOrganizationPipeDrie();//da provare ma in console va
 
-                    Response.Redirect("congratsWebinar.aspx?subject=" + webinar.subject + "&start=" + webinar.times[0].startTime + "&end=" + webinar.times[0].endTime +
-                        "&timezone=" + webinar.timeZone + "&participation=" + webinar.registrationUrl); //da vedere se il registration url va bene o no per il link di partecipazione
+                    Response.Redirect("congratsWebinar.aspx?subject=" + webinar.subject + "&start=" + webinar.times[0].startTime + "&end=" + webinar.times[0].endTime); //le api non restituisco il link per la partecipazione
 
                 }
                 catch (Exception ex)
@@ -90,7 +90,7 @@ namespace iscirzioniWebinar
             ControlloPIVA();
             ControlloCF();
 
-            if (txtNome.Text == "" || txtCognome.Text == "" || txtMail.Text == "" || txtCF.Text == "" || !checkPrivacy.Checked)
+            if (txtNome.Text == "" || txtCognome.Text == "" || txtMail.Text == "" || txtCF.Text == "" || !checkPrivacy.Checked || inputProvincia.Text == "" || !isEmail(txtMail.Text))
             {
                 return false;
             }
@@ -114,20 +114,6 @@ namespace iscirzioniWebinar
             }
 
             return true;
-        }
-
-        public void radioSi_CheckedChanged(object sender, EventArgs args)
-        {
-            siCrediti.Visible = true;
-            noCrediti.Visible = false;
-            radioNo.Checked = false;
-        }
-
-        public void radioNo_CheckedChanged(object sender, EventArgs args)
-        {
-            siCrediti.Visible = false;
-            noCrediti.Visible = true;
-            radioSi.Checked = false;
         }
 
         private void ControlloNome()
@@ -247,7 +233,7 @@ namespace iscirzioniWebinar
         private void ControlloMail()
         {
             //if che controlla se il campo complessivo della mail stato compilato (campo_mail = txtNomeMial + txtGruppoMail)
-            if (txtMail.Text == "") 
+            if (txtMail.Text == "" || !isEmail(txtMail.Text)) 
             {
                 //rimozione della class "is-valid" per la prima parte della mail se uno dei due campi dovessero essere vuoti
                 txtMail.Attributes.Add("class", String.Join(" ", txtMail
@@ -299,6 +285,7 @@ namespace iscirzioniWebinar
 
                 txtMail.Attributes.Remove("placeholder");
             }
+
         }
 
 
@@ -520,6 +507,18 @@ namespace iscirzioniWebinar
                     .ToArray()
                 ));
             }
+        }
+
+        public static bool isEmail(string inputEmail)//da verificare
+        {
+            string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+                  @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
+                  @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(inputEmail))
+                return (true);
+            else
+                return (false);
         }
 
         public static bool VerificaCodiceFiscale(string Codice)
@@ -889,9 +888,11 @@ namespace iscirzioniWebinar
             IRestResponse response = client.Execute(request);
             //Console.WriteLine(response.Content);
 
-            Organization org = JsonConvert.DeserializeObject<Organization>(response.Content);
+            //Organization org = JsonConvert.DeserializeObject<Organization>(response.Content);
 
-            return CreateActivityForUserPipeDrive(org.data.id); 
+            //return CreateActivityForUserPipeDrive(org.data.id);
+
+            return response.Content;
         }
 
         private string CreateActivityForUserPipeDrive(int org_id)

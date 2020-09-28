@@ -27,8 +27,8 @@
         <p id="dataEOra" runat="server"></p>
         
         <div class="row-md-12">
-        <p style="margin: 0; padding: 0">All'ora indicata sopra, <a id="webinarLink" runat="server">collegarsi al webinar</a></p>
-        <p style="margin: 0; padding: 0">Prima di partecipare, assicurati di <a>verificare i requisiti minimi di sistema</a> per evitare qualsiasi problema di connessione</p>  <!---da prednere il link per le impostazioni audio-->
+<!--        <p style="margin: 0; padding: 0">All'ora indicata sopra, <a id="webinarLink" runat="server">collegarsi al webinar</a></p>-->
+        <p style="margin: 0; padding: 0">Prima di partecipare, assicurati di <a href="https://support.goto.com/webinar/system-check-attendee?c_prod=g2w&c_name=confirmation&source=attendeeRegistrationPage&language=italian">verificare i requisiti minimi di sistema</a> per evitare qualsiasi problema di connessione</p>  <!---da prednere il link per le impostazioni audio-->
         <p style="margin: 0; padding: 0">&Egrave inviata un'email di conferma con informazioni sul metodo di partecipazione al webinar</p>
         <p style="margin: 0; padding: 0">Domande o commenti? Contattare formazione@bluenext.it</p>
     </div>

@@ -59,6 +59,7 @@
     <Content Include="imgs\icon.jpg" />
     <Content Include="imgs\blueNextNewLogo.png" />
     <Content Include="congratsWebinar.aspx" />
+    <Content Include="script.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

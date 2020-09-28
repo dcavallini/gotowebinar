@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56741266-1580-48F1-896B-4055C8992DDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iscirzioniWebinar.Tests</RootNamespace>
+    <AssemblyName>iscirzioniWebinar.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="LogMeIn.GoToWebinar.NET">
+      <HintPath>..\packages\LogMeIn.GoToWebinar.NET.2.3.0.0\lib\net40\LogMeIn.GoToWebinar.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="LogMeIn.GoToCoreLib.NET">
+      <HintPath>..\packages\LogMeIn.GoToCoreLib.NET.2.2.0\lib\net40\LogMeIn.GoToCoreLib.NET.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iscirzioniWebinar\iscirzioniWebinar.csproj">
+      <Project>{8E40A9DD-6612-42D2-8888-470E35C9B5A1}</Project>
+      <Name>iscrizioniWebinar</Name>
+      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Test.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-3.0.0.slim.min.map" />
+    <None Include="Scripts\jquery-3.0.0.slim.min.js" />
+    <None Include="Scripts\jquery-3.0.0.slim.js" />
+    <None Include="Scripts\jquery-3.0.0.min.map" />
+    <None Include="Scripts\jquery-3.0.0.min.js" />
+    <None Include="Scripts\jquery-3.0.0.js" />
+    <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
+    <None Include="Scripts\umd\popper.min.js.map" />
+    <None Include="Scripts\umd\popper.min.js" />
+    <None Include="Scripts\umd\popper.js.map" />
+    <None Include="Scripts\umd\popper.js.flow" />
+    <None Include="Scripts\umd\popper.js" />
+    <None Include="Scripts\umd\popper-utils.min.js.map" />
+    <None Include="Scripts\umd\popper-utils.min.js" />
+    <None Include="Scripts\umd\popper-utils.js.map" />
+    <None Include="Scripts\umd\popper-utils.js" />
+    <None Include="Scripts\src\utils\setupEventListeners.js" />
+    <None Include="Scripts\src\utils\setStyles.js" />
+    <None Include="Scripts\src\utils\setAttributes.js" />
+    <None Include="Scripts\src\utils\runModifiers.js" />
+    <None Include="Scripts\src\utils\removeEventListeners.js" />
+    <None Include="Scripts\src\utils\isOffsetContainer.js" />
+    <None Include="Scripts\src\utils\isNumeric.js" />
+    <None Include="Scripts\src\utils\isModifierRequired.js" />
+    <None Include="Scripts\src\utils\isModifierEnabled.js" />
+    <None Include="Scripts\src\utils\isIE.js" />
+    <None Include="Scripts\src\utils\isFunction.js" />
+    <None Include="Scripts\src\utils\isFixed.js" />
+    <None Include="Scripts\src\utils\isBrowser.js" />
+    <None Include="Scripts\src\utils\index.js" />
+    <None Include="Scripts\src\utils\includeScroll.js" />
+    <None Include="Scripts\src\utils\getWindowSizes.js" />
+    <None Include="Scripts\src\utils\getWindow.js" />
+    <None Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <None Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <None Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <None Include="Scripts\src\utils\getScrollParent.js" />
+    <None Include="Scripts\src\utils\getScroll.js" />
+    <None Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <None Include="Scripts\src\utils\getRoot.js" />
+    <None Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <None Include="Scripts\src\utils\getReferenceNode.js" />
+    <None Include="Scripts\src\utils\getPopperOffsets.js" />
+    <None Include="Scripts\src\utils\getParentNode.js" />
+    <None Include="Scripts\src\utils\getOuterSizes.js" />
+    <None Include="Scripts\src\utils\getOppositeVariation.js" />
+    <None Include="Scripts\src\utils\getOppositePlacement.js" />
+    <None Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <None Include="Scripts\src\utils\getOffsetRect.js" />
+    <None Include="Scripts\src\utils\getOffsetParent.js" />
+    <None Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <None Include="Scripts\src\utils\getClientRect.js" />
+    <None Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <None Include="Scripts\src\utils\getBoundaries.js" />
+    <None Include="Scripts\src\utils\getBordersSize.js" />
+    <None Include="Scripts\src\utils\findIndex.js" />
+    <None Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <None Include="Scripts\src\utils\find.js" />
+    <None Include="Scripts\src\utils\debounce.js" />
+    <None Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <None Include="Scripts\src\utils\clockwise.js" />
+    <None Include="Scripts\src\modifiers\shift.js" />
+    <None Include="Scripts\src\modifiers\preventOverflow.js" />
+    <None Include="Scripts\src\modifiers\offset.js" />
+    <None Include="Scripts\src\modifiers\keepTogether.js" />
+    <None Include="Scripts\src\modifiers\inner.js" />
+    <None Include="Scripts\src\modifiers\index.js" />
+    <None Include="Scripts\src\modifiers\hide.js" />
+    <None Include="Scripts\src\modifiers\flip.js" />
+    <None Include="Scripts\src\modifiers\computeStyle.js" />
+    <None Include="Scripts\src\modifiers\arrow.js" />
+    <None Include="Scripts\src\modifiers\applyStyle.js" />
+    <None Include="Scripts\src\methods\update.js" />
+    <None Include="Scripts\src\methods\placements.js" />
+    <None Include="Scripts\src\methods\enableEventListeners.js" />
+    <None Include="Scripts\src\methods\disableEventListeners.js" />
+    <None Include="Scripts\src\methods\destroy.js" />
+    <None Include="Scripts\src\methods\defaults.js" />
+    <None Include="Scripts\src\index.js" />
+    <None Include="Scripts\README.md" />
+    <None Include="Scripts\popper.min.js.map" />
+    <None Include="Scripts\popper.min.js" />
+    <None Include="Scripts\popper.js.map" />
+    <None Include="Scripts\popper.js" />
+    <None Include="Scripts\popper-utils.min.js.map" />
+    <None Include="Scripts\popper-utils.min.js" />
+    <None Include="Scripts\popper-utils.js.map" />
+    <None Include="Scripts\popper-utils.js" />
+    <None Include="Scripts\index.js.flow" />
+    <None Include="Scripts\index.d.ts" />
+    <None Include="Scripts\esm\popper.min.js.map" />
+    <None Include="Scripts\esm\popper.min.js" />
+    <None Include="Scripts\esm\popper.js.map" />
+    <None Include="Scripts\esm\popper.js" />
+    <None Include="Scripts\esm\popper-utils.min.js.map" />
+    <None Include="Scripts\esm\popper-utils.min.js" />
+    <None Include="Scripts\esm\popper-utils.js.map" />
+    <None Include="Scripts\esm\popper-utils.js" />
+    <None Include="Scripts\bootstrap.min.js.map" />
+    <None Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\bootstrap.js.map" />
+    <None Include="Scripts\bootstrap.js" />
+    <None Include="Scripts\bootstrap.bundle.min.js.map" />
+    <None Include="Scripts\bootstrap.bundle.min.js" />
+    <None Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Scripts\bootstrap.bundle.js" />
+    <None Include="Content\bootstrap.min.css.map" />
+    <None Include="Content\bootstrap.min.css" />
+    <None Include="Content\bootstrap.css.map" />
+    <None Include="Content\bootstrap.css" />
+    <None Include="Content\bootstrap-reboot.min.css.map" />
+    <None Include="Content\bootstrap-reboot.min.css" />
+    <None Include="Content\bootstrap-reboot.css.map" />
+    <None Include="Content\bootstrap-reboot.css" />
+    <None Include="Content\bootstrap-grid.min.css.map" />
+    <None Include="Content\bootstrap-grid.min.css" />
+    <None Include="Content\bootstrap-grid.css.map" />
+    <None Include="Content\bootstrap-grid.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

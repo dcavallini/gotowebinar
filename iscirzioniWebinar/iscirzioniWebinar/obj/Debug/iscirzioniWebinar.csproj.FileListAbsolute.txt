@@ -1,0 +1,6 @@
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/iscirzioniWebinar.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/iscirzioniWebinar.pdb
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscirzioniWebinar.csproj.CoreCompileInputs.cache
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscirzioniWebinar.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscirzioniWebinar.pdb
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscirzioniWebinar.csprojAssemblyReference.cache

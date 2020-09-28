@@ -1,0 +1,3895 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LogMeIn.GoToWebinar.NET</name>
+    </assembly>
+    <members>
+        <member name="T:LogMeIn.GoToWebinar.Api.AttendeesApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.AttendeesApi.#ctor">
+            <summary>
+            Initializes a new instance of the AttendeesApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.AttendeesApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the AttendeesApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.AttendeesApi.getAttendee(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get attendee
+            Retrieve registration details for a particular attendee of a specific webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <param name="registrantKey">The key of the registrant</param>
+            <returns>Registrant</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.AttendeesApi.getAttendeePollAnswers(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get attendee poll answers
+            Get poll answers from a particular attendee of a specific webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <param name="registrantKey">The key of the registrant</param>
+            <returns>List&lt;PollAnswer&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.AttendeesApi.getAttendeeQuestions(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get attendee questions
+            Get questions asked by an attendee during a webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <param name="registrantKey">The key of the registrant</param>
+            <returns>List&lt;AttendeeQuestion&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.AttendeesApi.getAttendeeSurveyAnswers(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get attendee survey answers
+            Retrieve survey answers from a particular attendee during a webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <param name="registrantKey">The key of the registrant</param>
+            <returns>List&lt;PollAnswer&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.AttendeesApi.getAttendees(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get session attendees
+            Retrieve details for all attendees of a specific webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <returns>List&lt;Attendee&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.AttendeesApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.AttendeesApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.CoorganizersApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.CoorganizersApi.#ctor">
+            <summary>
+            Initializes a new instance of the CoorganizersApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.CoorganizersApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the CoorganizersApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.CoorganizersApi.createCoorganizers(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Collections.Generic.List{LogMeIn.GoToWebinar.Api.Model.CoorganizerReqCreate})">
+            <summary>
+            Create co-organizers
+            Creates co-organizers for the specified webinar. For co-organizers that have a GoToWebinar account you have to set the parameter 'external' to 'false'. In this case you have to pass the parameter 'organizerKey' only. For co-organizers that have no GoToWebinar account you have to set the parameter 'external' to 'true'. In this case you have to pass the parameters 'givenName' and 'email'. Since there is no parameter for 'surname' you should pass first and last name to the parameter 'givenName'.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="body">The co-organizer details</param>
+            <returns>List&lt;Coorganizer&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.CoorganizersApi.deleteCoorganizer(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Boolean})">
+            <summary>
+            Delete co-organizer
+            Deletes an internal co-organizer specified by the coorganizerKey (memberKey).
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="coorganizerKey">The key of the internal or external co-organizer (memberKey)</param>
+            <param name="external">By default only internal co-organizers (with a GoToWebinar account) can be deleted. If you want to use this call for external co-organizers you have to set this parameter to 'true'.</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.CoorganizersApi.getCoorganizers(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get co-organizers
+            Returns the co-organizers for the specified webinar. The original organizer who created the webinar is filtered out of the list. If the webinar has no co-organizers, an empty array is returned. Co-organizers that do not have a GoToWebinar account are returned as external co-organizers. For those organizers no surname is returned.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>List&lt;Coorganizer&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.CoorganizersApi.resendCoorganizerInvitation(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Boolean})">
+            <summary>
+            Resend invitation
+            Resends an invitation email to the specified co-organizer
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="coorganizerKey">The key of the internal or external co-organizer (memberKey)</param>
+            <param name="external">By default only internal co-organizers (with a GoToWebinar account) will retrieve the resent invitation email. If you want to use this call for external co-organizers you have to set this parameter to 'true'.</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.CoorganizersApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.CoorganizersApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.PanelistsApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.PanelistsApi.#ctor">
+            <summary>
+            Initializes a new instance of the PanelistsApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.PanelistsApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the PanelistsApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.PanelistsApi.createPanelists(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Collections.Generic.List{LogMeIn.GoToWebinar.Api.Model.PanelistReqCreate})">
+            <summary>
+            Create Panelists
+            Create panelists for a specified webinar
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="body">Array of panelists</param>
+            <returns>List&lt;CreatedPanelist&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.PanelistsApi.deleteWebinarPanelist(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Delete webinar panelist
+            Removes a webinar panelist.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="panelistKey">The key of the webinar panelist</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.PanelistsApi.getPanelists(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get webinar panelists
+            Retrieves all the panelists for a specific webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>List&lt;Panelist&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.PanelistsApi.resendPanelistInvitation(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Resend panelist invitation
+            Resend the panelist invitation email.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="panelistKey">The key of the webinar panelist</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.PanelistsApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.PanelistsApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.RecordingAssetsApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RecordingAssetsApi.#ctor">
+            <summary>
+            Initializes a new instance of the RecordingAssetsApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RecordingAssetsApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the RecordingAssetsApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RecordingAssetsApi.searchAssets(System.String,LogMeIn.GoToWebinar.Api.Model.AssetsSearchReq,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Search for completed recordingassets
+            Allows search for a completed recordingasset.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">The asset search parameters</param>
+            <param name="page">The page number to be displayed. The first page is 0.</param>
+            <param name="size">The size of the page.</param>
+            <returns>AssetsResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.RecordingAssetsApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.RecordingAssetsApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.RegistrantsApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RegistrantsApi.#ctor">
+            <summary>
+            Initializes a new instance of the RegistrantsApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RegistrantsApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the RegistrantsApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RegistrantsApi.createRegistrant(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.String,System.Nullable{System.Boolean},LogMeIn.GoToWebinar.Api.Model.RegistrantFields)">
+            <summary>
+            Create registrant
+            Register an attendee for a scheduled webinar. The response contains the registrantKey and join URL for the registrant. An email will be sent to the registrant unless the organizer turns off the confirmation email setting from the GoToWebinar website. Please note that you must provide all required fields including custom fields defined during the webinar creation. Use the API call 'Get registration fields' to get a list of all fields, if they are required, and their possible values. At this time there are two versions of the 'Create Registrant' call. The first version only accepts firstName, lastName, and email and ignores all other fields. If you have custom fields or want to capture additional information this version won't work for you. The second version allows you to pass all required and optional fields, including custom fields defined when creating the webinar. To use the second version you must pass the header value 'Accept: application/vnd.citrix.g2wapi-v1.1+json' instead of 'Accept: application/json'. Leaving this header out results in the first version of the API call.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="accept">Set to 'application/vnd.citrix.g2wapi-v1.1+json' to make a registration using fields (custom or default) additional to the basic ones.</param>
+            <param name="resendConfirmation">Indicates whether the confirmation email should be resent when a registrant is re-registered. The default value is false.</param>
+            <param name="body">The registrant details. To get all possible values run the API call 'Get registration fields' which is also part of this documentation.</param>
+            <returns>RegistrantCreated</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RegistrantsApi.deleteRegistrant(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Delete registrant
+            Removes a webinar registrant from current registrations for the specified webinar. The webinar must be a scheduled, future webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="registrantKey">The key of the registrant</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RegistrantsApi.getAllRegistrantsForWebinar(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get registrants
+            Retrieve registration details for all registrants of a specific webinar. Registrant details will not include all fields captured when creating the registrant. To see all data, use the API call 'Get Registrant'. Registrants can have one of the following states; <para/>WAITING - registrant registered and is awaiting approval (where organizer has required approval), <para/>APPROVED - registrant registered and is approved, and <para/>DENIED - registrant registered and was denied.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>List&lt;Registrant&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RegistrantsApi.getRegistrant(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get registrant
+            Retrieve registration details for a specific registrant.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="registrantKey">The key of the registrant</param>
+            <returns>RegistrantDetailed</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.RegistrantsApi.getRegistrationFields(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get registration fields
+            Retrieve required, optional registration, and custom questions for a specified webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>RegistrationFields</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.RegistrantsApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.RegistrantsApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.SessionsApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.#ctor">
+            <summary>
+            Initializes a new instance of the SessionsApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the SessionsApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.getAllSessions(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get webinar sessions
+            Retrieves details for all past sessions of a specific webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="page">The page number to be displayed. The first page is 0.</param>
+            <param name="size">The size of the page.</param>
+            <returns>ReportingSessionsResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.getOrganizerSessions(System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get organizer sessions
+            Retrieve all completed sessions of all the webinars of a given organizer.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="fromTime">A required start of datetime range in ISO8601 UTC format, e.g. 2015-07-13T10:00:00Z</param>
+            <param name="toTime">A required end of datetime range in ISO8601 UTC format, e.g. 2015-07-13T22:00:00Z</param>
+            <param name="page">The page number to be displayed. The first page is 0.</param>
+            <param name="size">The size of the page.</param>
+            <returns>ReportingSessionsResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.getPerformance(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get session performance
+            Get performance details for a session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <returns>SessionPerformance</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.getPolls(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get session polls
+            Retrieve all collated attendee questions and answers for polls from a specific webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <returns>List&lt;Poll&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.getQuestions(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get session questions
+            Retrieve questions and answers for a past webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <returns>List&lt;AttendeeQuestion&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.getSurveys(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get session surveys
+            Retrieve surveys for a past webinar session.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <returns>List&lt;Poll&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.SessionsApi.getWebinarSession(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get webinar session
+            Retrieves attendance details for a specific webinar session that has ended. If attendees attended the session ('registrantsAttended'), specific attendance details, such as attendenceTime for a registrant, will also be retrieved.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sessionKey">The key of the webinar session</param>
+            <returns>List&lt;Attendee&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.SessionsApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.SessionsApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.WebhooksApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.#ctor">
+            <summary>
+            Initializes a new instance of the WebhooksApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the WebhooksApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.createSecretKey(System.String,LogMeIn.GoToWebinar.Api.Model.SecretKeyRequest)">
+            <summary>
+            Creates a new secret key
+            This creates a new secret key per application. It takes an optional validFrom value, a date time in ISO8601 format, e.g. 2019-07-01T22:00:00Z. The secret key will be activated at the given date. If validFrom is not passed, the secret key will be activated immediately. The secret key is used to generate a signature for events published to the callback url.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">The secret key object to create</param>
+            <returns>SecretKeyResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.createUserSubscriptions(System.String,System.Collections.Generic.List{LogMeIn.GoToWebinar.Api.Model.CreateUserSubscriptionRequest})">
+            <summary>
+            Creates new user subscriptions
+            A user subscriptions will be created for the provided webhook. Callback url can be provided for user subscription. The callback url will be validated by making a GET request. It should return 200 OK.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">User subscriptions to create</param>
+            <returns>UserSubscriptionResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.createWebhooks(System.String,System.Collections.Generic.List{LogMeIn.GoToWebinar.Api.Model.CreateWebhookRequest})">
+            <summary>
+            Creates new webhooks
+            A new webhook will be created with the provided callback url. Callback url should be a https url. Callback url will be validated by making a GET request. It should return 200 OK.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">Webhooks object to create</param>
+            <returns>WebhooksResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.deleteUserSubscriptions(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Deletes user subscriptions
+            Deletes user subscriptions by list of userSubscriptionKeys
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">List of userSubscriptionKeys to delete</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.deleteWebhooks(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Deletes webhooks
+            Deletes webhooks by list of webhookKeys
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">List of webhookKeys to delete</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.getUserSubscription(System.String,System.String)">
+            <summary>
+            Get user subscription
+            Get a user subscription by userSubscriptionKey for the requesting user.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="userSubscriptionsKey">The unique identifier for a user subscription.</param>
+            <returns>UserSubscription</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.getUserSubscriptions(System.String,System.String)">
+            <summary>
+            Get user subscriptions
+            Get the list of user subscriptions by product for the requesting user. Product must be provided.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="product">Supported products</param>
+            <returns>UserSubscriptionResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.getWebhook(System.String,System.String)">
+            <summary>
+            Get webhook
+            Get a webhook by webhookKey for the requesting user.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="webhookKey">The unique identifier for a webhook.</param>
+            <returns>Webhook</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.getWebhooks(System.String,System.String)">
+            <summary>
+            Get webhooks
+            Get the list of webhooks by product for the requesting user. Product must be provided.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="product">Supported products</param>
+            <returns>WebhooksResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.updateUserSubscriptions(System.String,System.Collections.Generic.List{LogMeIn.GoToWebinar.Api.Model.UpdateUserSubscriptionsRequest})">
+            <summary>
+            Updates user subscriptions
+            Callback url and state of user subscriptions can be updated using this API. The callback url will be validated by making a GET request. It should return 200 OK.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">User subscriptions to update</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebhooksApi.updateWebhooks(System.String,System.Collections.Generic.List{LogMeIn.GoToWebinar.Api.Model.UpdateWebhooksRequest})">
+            <summary>
+            Updates webhooks
+            Callback url and state of webhooks can be updated using this API. Callback url should be a https url. Callback url will be validated by making a GET request. It should return 200 OK.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="body">Webhooks object to update</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.WebhooksApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.WebhooksApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.WebinarsApi">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.#ctor">
+            <summary>
+            Initializes a new instance of the WebinarsApi class using the
+            default endpoint base url for the services being accessed.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the WebinarsApi class using an endpoint base
+            url other than the default. Use this constructor only if you should need
+            to override the default endpoint base url.
+            </summary>
+            <param name="basePath">The endpoint base url for the services being accessed.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.cancelWebinar(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Boolean})">
+            <summary>
+            Cancel webinar
+            Cancels a specific webinar. If the webinar is a series or sequence, this call deletes all scheduled sessions. To send cancellation emails to registrants set sendCancellationEmails=true in the request. When the cancellation emails are sent, the default generated message is used in the cancellation email body.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="sendCancellationEmails">Indicates whether cancellation notice emails should be sent. The default value is false</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.createWebinar(System.String,System.Nullable{System.Int64},LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate)">
+            <summary>
+            Create webinar
+            Creates a single session webinar, a sequence of webinars or a series of webinars depending on the type field in the body: \"single_session\" creates a single webinar session, \"sequence\" creates a webinar with multiple meeting times where attendees are expected to be the same for all sessions, and \"series\" creates a webinar with multiple meetings times where attendees choose only one to attend. The default, if no type is declared, is single_session. A sequence webinar requires a \"recurrenceStart\" object consisting of a \"startTime\" and \"endTime\" key for the first webinar of the sequence, a \"recurrencePattern\" of \"daily\", \"weekly\", \"monthly\", and a \"recurrenceEnd\" which is the last date of the sequence (for example, 2016-12-01). A series webinar requires a \"times\" array with a discrete \"startTime\" and \"endTime\" for each webinar in the series. The call requires a webinar subject and description. The \"isPasswordProtected\" sets whether the webinar requires a password for attendees to join. If set to True, the organizer must go to Registration Settings at My Webinars (https://global.gotowebinar.com/webinars.tmpl) and add the password to the webinar, and send the password to the registrants. The response provides a numeric webinarKey in string format for the new webinar. Once a webinar has been created with this method, you can accept registrations. To create a scheduled simulive webinar set the \"experienceType\" as \"SIMULIVE\" along with the \"recordingAssetKey\". The \"recordingAssetKey\" is the unique identifier for the recording asset with which the simulive webinar should be created from. In case the asset was created as an online recording the simulive webinar settings, poll and surveys would be copied from the webinar whose session was recorded. The \"recordingAssetKey\" can be obtained using the new search recordingassets call. To create an on demand webinar set \"isOndemand\" to true along with the \"experienceType\" and the \"recordingAssetKey\". Simulive does not support sequence webinars.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="body">The webinar details</param>
+            <returns>CreatedWebinar</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getAllAccountWebinars(System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get all webinars for an account
+            Retrieves the list of webinars for an account within a given date range. __*Page*__ and __*size*__ parameters are optional. Default __*page*__ is 0 and default __*size*__ is 20.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="accountKey">The key of the account</param>
+            <param name="fromTime">A required start of datetime range in ISO8601 UTC format, e.g. 2015-07-13T10:00:00Z</param>
+            <param name="toTime">A required end of datetime range in ISO8601 UTC format, e.g. 2015-07-13T22:00:00Z</param>
+            <param name="page">The page number to be displayed. The first page is 0.</param>
+            <param name="size">The size of the page.</param>
+            <returns>ReportingWebinarsResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getAttendeesForAllWebinarSessions(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get attendees for all webinar sessions
+            Returns all attendees for all sessions of the specified webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="page">The page number to be displayed. The first page is 0.</param>
+            <param name="size">The size of the page.</param>
+            <returns>ReportingAttendeeResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getAudioInformation(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get audio information
+            Retrieves the audio/conferencing information for a specific webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>Audio</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getInSessionWebinars(System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Get All Insession Webinars
+            Returns all insession webinars for the currently authenticated organizer that are scheduled within the specified date/time range. All inession webinars are returned in case no date/time range is provided.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="fromTime">Start of datetime range in ISO8601 UTC format, e.g. 2015-07-13T10:00:00Z</param>
+            <param name="toTime">End of datetime range in ISO8601 UTC format, e.g. 2015-07-13T22:00:00Z</param>
+            <returns>List&lt;BrokerWebinar&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getPerformanceForAllWebinarSessions(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get performance for all webinar sessions
+            Gets performance details for all sessions of a specific webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>Dictionary&lt;String, SessionPerformance&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getWebinar(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get webinar
+            Retrieve information on a specific webinar. If the type of the webinar is 'sequence', a sequence of future times will be provided. Webinars of type 'series' are treated the same as normal webinars - each session in the webinar series has a different webinarKey. If an organizer cancels a webinar, then a request to get that webinar would return a '404 Not Found' error.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>WebinarByKey</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getWebinarMeetingTimes(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get webinar meeting times
+            Retrieves the meeting times for a webinar.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <returns>List&lt;DateTimeRange&gt;</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.getWebinars(System.String,System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int64},System.Nullable{System.Int64})">
+            <summary>
+            Get Webinars
+            Returns upcoming and past webinars for the currently authenticated organizer that are scheduled within the specified date/time range. __*Page*__ and __*size*__ parameters are optional. Default __*page*__ is 0 and default __*size*__ is 20.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="fromTime">A required start of datetime range in ISO8601 UTC format, e.g. 2015-07-13T10:00:00Z</param>
+            <param name="toTime">A required end of datetime range in ISO8601 UTC format, e.g. 2015-07-13T22:00:00Z</param>
+            <param name="page">The page number to be displayed. The first page is 0.</param>
+            <param name="size">The size of the page.</param>
+            <returns>ReportingWebinarsResponse</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.updateAudioInformation(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Boolean},LogMeIn.GoToWebinar.Api.Model.AudioUpdate)">
+            <summary>
+            Update audio information
+            Updates the audio/conferencing settings for a specific webinar
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="notifyParticipants">Defines whether to send notifications to participants</param>
+            <param name="body">The audio/conferencing settings</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.WebinarsApi.updateWebinar(System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.Boolean},LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate)">
+            <summary>
+            Update webinar
+            Updates a webinar. The call requires at least one of the parameters in the request body. The request completely replaces the existing session, series, or sequence and so must include the full definition of each as for the Create call. Set notifyParticipants=true to send update emails to registrants.
+            </summary>
+            <param name="authorization">Access token</param>
+            <param name="organizerKey">The key of the organizer</param>
+            <param name="webinarKey">The key of the webinar</param>
+            <param name="notifyParticipants">Defines whether to send notifications to participants</param>
+            <param name="body">The webinar details</param>
+            <returns>void</returns>
+            <exception cref="T:LogMeIn.GoToWebinar.Api.Common.ApiException"></exception>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.WebinarsApi.Invoker">
+            <summary>
+            Gets the API invoker
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.WebinarsApi.BasePath">
+            <summary>
+            Gets the endpoint base url for the services being accessed
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Common.ApiException">
+            <summary>
+            The exception thrown when an API error occurs.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the ApiException class.
+            </summary>
+            <param name="message">A string describing the error.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiException.#ctor(System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the ApiException class.
+            </summary>
+            <param name="errorCode">The status code of the error that occured.
+            Can be HTML status code or another number for other types of exceptions.</param>
+            <param name="message">A string describing the error.</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiException.#ctor(System.Int32,System.Exception)">
+            <summary>
+            Initializes a new instance of the ApiException class.
+            </summary>
+            <param name="errorCode">The status code of the error that occured.
+            Can be HTML status code or another number for other types of exceptions.</param>
+            <param name="e">The inner exception</param>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiException.#ctor(System.Exception)">
+            <summary>
+            Initializes a new instance of the ApiException class.
+            </summary>
+            <param name="e">The inner exception</param>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Common.ApiException.ErrorCode">
+            <summary>
+            Gets the status code of the error that occurred.
+            Can be HTML status code or another number for other types of exceptions.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Common.ApiInvoker">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiInvoker.GetInstance">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiInvoker.AddDefaultHeader(System.String,System.String)">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiInvoker.EscapeString(System.String)">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiInvoker.Deserialize(System.String,System.Type)">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiInvoker.Serialize(System.Object)">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Common.ApiInvoker.InvokeAPI(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Object,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.Object},System.Type,System.String)">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AccessCodes">
+            <summary>
+            Describes the access codes for organizer, panelists and attendees
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AccessCodes.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AccessCodes.organizer">
+            <summary>
+            Access code for the organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AccessCodes.panelist">
+            <summary>
+            Access code for panelists
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AccessCodes.attendee">
+            <summary>
+            Access code for attendees
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ActivationState">
+            <summary>
+            Final state of user subscription. ActivationState will be ACTIVE if both webhook and user subscription states are ACTIVE, INACTIVE otherwise.
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.ActivationState.INACTIVE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.ActivationState.ACTIVE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AnswerToAttendeeQuestion">
+            <summary>
+            Describes an answer to a question asked by an attendee during a webinar session.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AnswerToAttendeeQuestion.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AnswerToAttendeeQuestion.answer">
+            <summary>
+            An answer given to a question asked by an attendee during a webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AnswerToAttendeeQuestion.answeredBy">
+            <summary>
+            The key of the organizer that answered the attendee's question
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Asset">
+            <summary>
+            Describes a completed recordingasset.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Asset.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Asset.name">
+            <summary>
+            The name of the asset
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Asset.recordingAssetKey">
+            <summary>
+            The unique identifier for the recording asset
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Asset.productName">
+            <summary>
+            The product with which the asset was originally created
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Asset.createTime">
+            <summary>
+            The create time of the asset
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Asset.creatorKey">
+            <summary>
+            The key of the creator
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Asset.accountKey">
+            <summary>
+            The key of the account
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Asset.totalReferenceCount">
+            <summary>
+            The total number of references of the asset across products
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Assets">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Assets.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Assets.recordingAssets">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AssetsResponse">
+            <summary>
+            Describes a list of completed assets
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AssetsResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AssetsResponse._embedded">
+            <summary>
+            The assets array for an organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AssetsResponse.page">
+            <summary>
+            The assets page description. The first page is 0
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AssetsSearchReq">
+            <summary>
+            Describes the details used to search a completed recordingasset.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AssetsSearchReq.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AssetsSearchReq.accountKey">
+            <summary>
+            The key of the account
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AssetsSearchReq.name">
+            <summary>
+            The name of the recordingasset
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AssetsSearchReq.sortField">
+            <summary>
+            Sorts on the specified field. The default value is \"CREATETIME\". The possible values are \"CREATETIME\" and \"NAME\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AssetsSearchReq.sortOrder">
+            <summary>
+            Specifies the sort order type. The default value is \"DESC\". The possible values are \"DESC\", \"ASC\".
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Attendance">
+            <summary>
+            Describes the times the attendee joined and left a webinar session.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Attendance.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendance.joinTime">
+            <summary>
+            The time the attendee joined a webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendance.leaveTime">
+            <summary>
+            The time the attendee left a webinar session
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AttendanceStatistics">
+            <summary>
+            Describes attendance metrics for a webinar session.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AttendanceStatistics.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendanceStatistics.registrantCount">
+            <summary>
+            The number of registrations for the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendanceStatistics.percentageAttendance">
+            <summary>
+            The percentage of registrants that actually attended the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendanceStatistics.averageInterestRating">
+            <summary>
+            Numerical value 1-100 (100 being most interested) indicating the average interest rating of the webinar attendees
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendanceStatistics.averageAttentiveness">
+            <summary>
+            Average based on the focus of the attendees Viewer during the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendanceStatistics.averageAttendanceTimeSeconds">
+            <summary>
+            Average attendance time in seconds
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Attendee">
+            <summary>
+            Describes the attendee of a webinar
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Attendee.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendee.registrantKey">
+            <summary>
+            The key of the webinar attendee
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendee.firstName">
+            <summary>
+            The attendee's first name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendee.lastName">
+            <summary>
+            The attendee's last name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendee.email">
+            <summary>
+            The attendee's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendee.attendanceTimeInSeconds">
+            <summary>
+            The total attendance time in seconds
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendee.sessionKey">
+            <summary>
+            The unique key of the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Attendee.attendance">
+            <summary>
+            The list of times the attendee joined and left the webinar session
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AttendeeFollowUpEmailSetting">
+            <summary>
+            Describes Attendee follow-up email settings.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AttendeeFollowUpEmailSetting.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendeeFollowUpEmailSetting.enabled">
+            <summary>
+            Indicates whether email settings are enabled or disabled.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendeeFollowUpEmailSetting.includeCertificate">
+            <summary>
+            Indicates whether to include certificates in attendee follow-up emails is enabled or disabled.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AttendeeQuestion">
+            <summary>
+            Describes the question asked by an attendee during a webinar session; includes the answers given to it.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AttendeeQuestion.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendeeQuestion.answers">
+            <summary>
+            Answer to a question of an attendee and key of the organizer that answered
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendeeQuestion.question">
+            <summary>
+            The question asked by the attendee
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AttendeeQuestion.askedBy">
+            <summary>
+            The email address of the attendee that asked the question
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Audio">
+            <summary>
+            Describes the audio/conferencing information for a webinar.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Audio.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Audio.type">
+            <summary>
+            Indicates how to connect to the webinar's audio conference. The value of this field determines if other fields appear in the response or not
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Audio.confCallNumbers">
+            <summary>
+            The conference call numbers and access codes per country. This will be returned only, if 'type' is not set to 'Private'. Example for this object: \"confCallNumbers\":{\"CA\":{\"accessCodes\":{\"attendee\":\"159-309-045\",\"organizer\":\"791-426-085\",\"panelist\":\"690-270-339\"},\"tollFree\":\"1 888 455 4198\"},\"FI\":{\"accessCodes\":{\"attendee\":\"159-309-045\",\"organizer\":\"791-426-085\",\"panelist\":\"690-270-339\"},\"toll\":\"+358 (0) 338 79 4198\"},\"US\":{\"accessCodes\":{\"attendee\":\"159-309-045\",\"organizer\":\"791-426-085\",\"panelist\":\"690-270-339\"},\"toll\":\"+1 (805) 879-4198\",\"tollFree\":\"1 888 455 4198\"}}
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Audio.privateInfo">
+            <summary>
+            Phone numbers for an own conference call service
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AudioType">
+            <summary>
+            How to connect to the webinar's audio conference
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.AudioType.PSTN">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.AudioType.VOIP">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.AudioType.Hybrid">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.AudioType.Private">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.AudioUpdate">
+            <summary>
+            Defines the audio/conferencing settings for the specified webinar
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.AudioUpdate.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AudioUpdate.type">
+            <summary>
+            Indicates how to connect to the webinar's audio conference
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AudioUpdate.pstnInfo">
+            <summary>
+            Defines via two-letter Alpha-2-code which toll and toll-free PSTN numbers are available per country
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.AudioUpdate.privateInfo">
+            <summary>
+            Defines the audio data for an own conferencing system
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar">
+            <summary>
+            Describes a scheduled webinar
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.numberOfRegistrants">
+            <summary>
+            The number of registrants at the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.times">
+            <summary>
+            Array with startTime and endTime for the webinar sessions
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.description">
+            <summary>
+            A short description of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.subject">
+            <summary>
+            The webinar subject
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.inSession">
+            <summary>
+            Indicates whether there is a webinar session currently in progress
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.organizerKey">
+            <summary>
+            The key of the webinar organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.webinarKey">
+            <summary>
+            The unique key of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.webinarID">
+            <summary>
+            The 9-digit webinar ID
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.timeZone">
+            <summary>
+            The timezone where the webinar is taking place
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.registrationUrl">
+            <summary>
+            The URL the webinar invitees can use to register
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.BrokerWebinar.experienceType">
+            <summary>
+            Specifies the experience type. The possible values are \"classic\", \"broadcast\" and \"simulive\".
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.CallNumbers">
+            <summary>
+            Conference call numbers per country.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.CallNumbers.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CallNumbers.accessCodes">
+            <summary>
+            Describes the access codes for organizer, panelists and attendees.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CallNumbers.toll">
+            <summary>
+            Conference number for toll calls.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CallNumbers.tollFree">
+            <summary>
+            Conference number for toll-free calls.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Coorganizer">
+            <summary>
+            Describes a webinar co-organizer. A co-organizer without a GoToWebinar account is marked as external and is returned without a surname
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Coorganizer.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Coorganizer.joinLink">
+            <summary>
+            The co-organizer's join link
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Coorganizer.email">
+            <summary>
+            The co-organizer's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Coorganizer.memberKey">
+            <summary>
+            The co-organizer's organizer key. A new member key is created for external co-organizers
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Coorganizer.external">
+            <summary>
+            If the co-organizer has no GoToWebinar account, this value is set to 'true'
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Coorganizer.surname">
+            <summary>
+            The co-organizer's surname. For external co-organizers this parameter is not returned
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Coorganizer.givenName">
+            <summary>
+            The co-organizer's given name
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.CoorganizerReqCreate">
+            <summary>
+            Details used for creating a co-organizer for a webinar. 
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.CoorganizerReqCreate.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CoorganizerReqCreate.external">
+            <summary>
+            If the co-organizer has no GoToWebinar account, this value has to be set to 'true'
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CoorganizerReqCreate.organizerKey">
+            <summary>
+            The co-organizer's organizer key. This parameter has to be passed only, if 'external' is set to 'false'
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CoorganizerReqCreate.givenName">
+            <summary>
+            The co-organizer's given name. This parameter has to be passed only, if 'external' is set to 'true'
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CoorganizerReqCreate.email">
+            <summary>
+            The co-organizer's email address. This parameter has to be passed only, if 'external' is set to 'true'
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.CreatedPanelist">
+            <summary>
+            Describes a created panelist
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.CreatedPanelist.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreatedPanelist.name">
+            <summary>
+            The panelist's name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreatedPanelist.email">
+            <summary>
+            The panelist's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreatedPanelist.joinLink">
+            <summary>
+            The panelist's join link
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreatedPanelist.panelistKey">
+            <summary>
+            The panelist's key
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.CreatedWebinar">
+            <summary>
+            Describes a newly created webinar.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.CreatedWebinar.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreatedWebinar.webinarKey">
+            <summary>
+            The unique key of the webinar.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.CreateUserSubscriptionRequest">
+            <summary>
+            Describes a single user subscription
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.CreateUserSubscriptionRequest.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreateUserSubscriptionRequest.callbackUrl">
+            <summary>
+            A HTTPs url that can accept posted events. It should return 200 OK for GET requests.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreateUserSubscriptionRequest.webhookKey">
+            <summary>
+            The unique identifier for the webhook
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreateUserSubscriptionRequest.userSubscriptionState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.CreateWebhookRequest">
+            <summary>
+            Representation of a single webhook
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.CreateWebhookRequest.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreateWebhookRequest.callbackUrl">
+            <summary>
+            A HTTPs url that can accept posted events. It should return 200 OK for GET requests.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreateWebhookRequest.eventName">
+            <summary>
+            Type of event for the webhook. Supported eventNames are registrant.added, registrant.joined, webinar.created, webinar.updated
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreateWebhookRequest.eventVersion">
+            <summary>
+            Version of event being subscribed for. Supported eventVersion is 1.0.0
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CreateWebhookRequest.product">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.CustomAnswers">
+            <summary>
+            Answers to custom questions of the registrant
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.CustomAnswers.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CustomAnswers.answer">
+            <summary>
+            Answer to a custom question when registering
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.CustomAnswers.question">
+            <summary>
+            Custom question for registering
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.DateTimeRange">
+            <summary>
+            A pair of DateTime values, the first of which serves as a start time and the second as an end time of an interval.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.DateTimeRange.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.DateTimeRange.startTime">
+            <summary>
+            The starting time of an interval, e.g. 2015-07-13T10:00:00Z
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.DateTimeRange.endTime">
+            <summary>
+            The ending time of an interval, e.g. 2015-07-13T22:00:00Z
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.EmailSettings">
+            <summary>
+            Describes Confirmation email, Reminder email and Absentee follow-up email settings.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.EmailSettings.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.EmailSettings.enabled">
+            <summary>
+            Indicates whether email settings are enabled or disabled.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.FirstPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.FirstPage.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.FirstPage.href">
+            <summary>
+            The first page link
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.LastPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.LastPage.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.LastPage.href">
+            <summary>
+            The last page link
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Page">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Page.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Page.size">
+            <summary>
+            The page size
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Page.totalElements">
+            <summary>
+            The total elements
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Page.totalPages">
+            <summary>
+            The pages count
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Page.number">
+            <summary>
+            The current page number. The first page is 0
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Panelist">
+            <summary>
+            Describes a webinar session panelist
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Panelist.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Panelist.joinLink">
+            <summary>
+            The co-organizer's join link
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Panelist.lastName">
+            <summary>
+            DEPRECATED. The fields 'firstName' and 'lastName' are replaced by the field 'name'
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Panelist.email">
+            <summary>
+            The panelist's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Panelist.name">
+            <summary>
+            The panelist's name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Panelist.panelistId">
+            <summary>
+            The panelist's ID
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Panelist.firstName">
+            <summary>
+            DEPRECATED. The fields 'firstName' and 'lastName' are replaced by the field 'name'
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.PanelistReqCreate">
+            <summary>
+            Describes a single panelist
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.PanelistReqCreate.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PanelistReqCreate.email">
+            <summary>
+            The panelist's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PanelistReqCreate.name">
+            <summary>
+            The panelist's name
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Poll">
+            <summary>
+            A poll or survey launched by an organizer during or after a webinar session; includes the responses given to it by the attendees.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Poll.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Poll.responses">
+            <summary>
+            The responses given by the attendees to the poll or survey
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Poll.question">
+            <summary>
+            The poll or survey question asked by the webinar organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Poll.numberOfResponses">
+            <summary>
+            The total number of responses received for this poll or survey
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.PollAnswer">
+            <summary>
+            Describes the answer given by a webinar attendee to a poll or survey launched by an organizer.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.PollAnswer.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollAnswer.answer">
+            <summary>
+            The answer given to the poll or survey question
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollAnswer.question">
+            <summary>
+            The poll or survey question
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.PollResponse">
+            <summary>
+            One of the potential responses/options to a poll or survey launched by an organizer during a webinar session.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.PollResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollResponse.text">
+            <summary>
+            The text of the response/option to a poll or survey
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollResponse.percentage">
+            <summary>
+            The percentage of responses that favored this particular option
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.PollsAndSurveysStatistics">
+            <summary>
+            Details on the polls and surveys for a webinar session.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.PollsAndSurveysStatistics.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollsAndSurveysStatistics.pollCount">
+            <summary>
+            The number of polls launched at a webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollsAndSurveysStatistics.surveyCount">
+            <summary>
+            The percentage of surveys launched at a webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollsAndSurveysStatistics.questionsAsked">
+            <summary>
+            The number of questions asked at a webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollsAndSurveysStatistics.percentagePollsCompleted">
+            <summary>
+            The percentage of polls completed by the attendees
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PollsAndSurveysStatistics.percentageSurveysCompleted">
+            <summary>
+            The percentage of surveys completed by the attendees
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.PrivateInfo">
+            <summary>
+            Phone numbers for an own conference call service.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.PrivateInfo.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PrivateInfo.attendee">
+            <summary>
+            Text for the panelist when using an own conference call service
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PrivateInfo.organizer">
+            <summary>
+            Text for the organizer when using an own conference call service
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PrivateInfo.panelist">
+            <summary>
+            Text for the panelist when using an own conference call service
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.PrivateInfoUpdate">
+            <summary>
+            Defines the audio data for an own conferencing system
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.PrivateInfoUpdate.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PrivateInfoUpdate.attendee">
+            <summary>
+            Attendee phone number for own conference call system
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PrivateInfoUpdate.organizer">
+            <summary>
+            Organizer phone number for own conference call system
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PrivateInfoUpdate.panelist">
+            <summary>
+            Panelist phone number for own conference call system
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Product">
+            <summary>
+            Product of the events
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Product.g2w">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.PstnInfoUpdate">
+            <summary>
+            Defines the audio/conferencing settings for the specified webinar. It required to pass 'tollFreeCountries' or 'tollCountries' or both.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.PstnInfoUpdate.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PstnInfoUpdate.tollFreeCountries">
+            <summary>
+            Defines in which countries toll free PSTN numbers are available. Possible values are AE, AR, AT, AU, BE, BG, BH, BR, BY, CA, CH, CL, CN, CO, CZ, DE, DK, ES, FI, FR, GB, GR, HK, HU, ID, IE, IL, IN, IS, IT, JP, KR, LU, MX, MY, NL, NO, NZ, PA, PE, PH, PL, PT, RO, RU, SA, SE, SG, TH, TR, TW, UA, US, UY, VN, ZA
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.PstnInfoUpdate.tollCountries">
+            <summary>
+            Defines in which countries toll PSTN numbers are available. Possible values are AT, AU, BE, CA, CH, DE, DK, ES, FI, FR, GB, IE, IT, NL, NO, NZ, SE, US
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Registrant">
+            <summary>
+            Describes a webinar registrant
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Registrant.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.lastName">
+            <summary>
+            The registrant's last name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.email">
+            <summary>
+            The registrant's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.firstName">
+            <summary>
+            The registrant's first name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.registrantKey">
+            <summary>
+            The registrant's key
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.registrationDate">
+            <summary>
+            The registration date and time
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.status">
+            <summary>
+            The registration status
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.joinUrl">
+            <summary>
+            The URL the registrant will use to join the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Registrant.timeZone">
+            <summary>
+            The time zone where the webinar will take place
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Registrant.StatusEnum">
+            <summary>
+            The registration status
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Registrant.StatusEnum.APPROVED">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Registrant.StatusEnum.DENIED">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Registrant.StatusEnum.WAITING">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrantCreated">
+            <summary>
+            Describes a newly created webinar registrant.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrantCreated.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantCreated.registrantKey">
+            <summary>
+            The registrant's key
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantCreated.joinUrl">
+            <summary>
+            The URL the registrant will use to join the webinar.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed">
+            <summary>
+            Detailed description of a webinar registrant with all registration fields.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.lastName">
+            <summary>
+            The registrant's last name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.email">
+            <summary>
+            The registrant's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.firstName">
+            <summary>
+            The registrant's first name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.registrantKey">
+            <summary>
+            The registrant's key
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.registrationDate">
+            <summary>
+            The registration date and time
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.source">
+            <summary>
+            The source that led to the registration. This can be any string like 'Newsletter 123' or 'Marketing campaign ABC'
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.status">
+            <summary>
+            The registration status
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.joinUrl">
+            <summary>
+            The URL the registrant will use to join the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.timeZone">
+            <summary>
+            The time zone where the webinar will take place
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.phone">
+            <summary>
+            The registrant's phone
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.state">
+            <summary>
+            The registrant's state (US only)
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.city">
+            <summary>
+            The registrant's city
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.organization">
+            <summary>
+            The registrant's organization
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.zipCode">
+            <summary>
+            The registrant's zip (post) code
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.numberOfEmployees">
+            <summary>
+            The size in employees of the registrant's organization
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.industry">
+            <summary>
+            The type of industry the registrant's organization belongs to
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.jobTitle">
+            <summary>
+            The registrant's job title
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.purchasingRole">
+            <summary>
+            The registrant's role in purchasing the product
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.implementationTimeFrame">
+            <summary>
+            The time frame within which the product will be purchased
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.purchasingTimeFrame">
+            <summary>
+            The time frame within which the product will be purchased
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.questionsAndComments">
+            <summary>
+            Any questions or comments the registrant made at the time of registration
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.employeeCount">
+            <summary>
+            The size in employees of the registrant's organization
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.country">
+            <summary>
+            The registrant's country
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.address">
+            <summary>
+            The registrant's address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.type">
+            <summary>
+            The type is REGULAR for 'One session' and 'Sequence' webinars. The type LATE is for registrants registering for past webinars. For webinar series this parameter is not passed
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.unsubscribed">
+            <summary>
+            Indicates whether the registrant opted-out from receiving other emails from this webinar's organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.responses">
+            <summary>
+            Responses to custom questions
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.StatusEnum">
+            <summary>
+            The registration status
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.StatusEnum.APPROVED">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.StatusEnum.DENIED">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.StatusEnum.WAITING">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.TypeEnum">
+            <summary>
+            The type is REGULAR for 'One session' and 'Sequence' webinars. The type LATE is for registrants registering for past webinars. For webinar series this parameter is not passed
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.TypeEnum.LATE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.RegistrantDetailed.TypeEnum.REGULAR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrantFields">
+            <summary>
+            Detailed description of a all fields to register a registrant for a webinar.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.firstName">
+            <summary>
+            The registrant's first name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.lastName">
+            <summary>
+            The registrant's last name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.email">
+            <summary>
+            The registrant's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.source">
+            <summary>
+            The source that led to the registration. This can be any string like 'Newsletter 123' or 'Marketing campaign ABC'
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.address">
+            <summary>
+            The registrant's address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.city">
+            <summary>
+            The registrant's city
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.state">
+            <summary>
+            The registrant's state (US only)
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.zipCode">
+            <summary>
+            The registrant's zip (post) code
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.country">
+            <summary>
+            The registrant's country
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.phone">
+            <summary>
+            The registrant's phone
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.organization">
+            <summary>
+            The registrant's organization
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.jobTitle">
+            <summary>
+            The registrant's job title
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.questionsAndComments">
+            <summary>
+            Any questions or comments the registrant made at the time of registration
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.industry">
+            <summary>
+            The type of industry the registrant's organization belongs to
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.numberOfEmployees">
+            <summary>
+            The size in employees of the registrant's organization
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.purchasingTimeFrame">
+            <summary>
+            The time frame within which the product will be purchased
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.purchasingRole">
+            <summary>
+            The registrant's role in purchasing the product
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantFields.responses">
+            <summary>
+            Set the answers of all questions
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrantQAResponse">
+            <summary>
+            Describes a completed registration question for a webinar registrant. If you use 'Multiple choice' questions the response contains the numeric answerKey, otherwise the answer text. Example:<para/>{<para/>  \"firstName\": \"First\",<para/>  \"lastName\": \"Last\",<para/>  \"email\": \"First.Last@example.com\",<para/>  \"responses\": [{<para/>      \"questionKey\": 17023549,<para/>      \"responseText\": \"This is a short answer\"},{<para/>      \"questionKey\": 17023550,<para/>      \"answerKey\": 17023553}  ]<para/>}
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrantQAResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantQAResponse.questionKey">
+            <summary>
+            The unique key of the question
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantQAResponse.responseText">
+            <summary>
+            Answer of the question.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrantQAResponse.answerKey">
+            <summary>
+            The numeric key of the answer to a multiple-choice question.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrationAnswer">
+            <summary>
+            Describes an answer to a multiple choice custom registration field.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrationAnswer.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationAnswer.answer">
+            <summary>
+            The answer value
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationAnswer.answerKey">
+            <summary>
+            The answer key
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrationField">
+            <summary>
+            Describes a field for a webinar registration.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrationField.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationField.field">
+            <summary>
+            The name of the registration field
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationField.answers">
+            <summary>
+            List of choices for a multiple choice registration field
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationField.required">
+            <summary>
+            Indicates whether the custom registration field is compulsory
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationField.maxSize">
+            <summary>
+            The character size of the custom registration field (max 128)
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrationFields">
+            <summary>
+            The fields to be completed on the webinar registration form.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrationFields.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationFields.questions">
+            <summary>
+            Custom fields created by the organizer for the webinar registration form
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationFields.fields">
+            <summary>
+            The default fields the organizer has selected for the webinar registration form
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion">
+            <summary>
+            Describes a custom field for a webinar registration.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.questionKey">
+            <summary>
+            The unique key of the custom registration field
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.question">
+            <summary>
+            The value (text) of the custom registration field
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.required">
+            <summary>
+            Indicates whether the custom registration field is compulsory
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.type">
+            <summary>
+            Indicates whether the custom registration field requires a single short answer or whether it is a multiple choice question
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.maxSize">
+            <summary>
+            The character size of the custom registration field (max 1000)
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.answers">
+            <summary>
+            The answers to a multiple choice custom registration field
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.TypeEnum">
+            <summary>
+            Indicates whether the custom registration field requires a single short answer or whether it is a multiple choice question
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.TypeEnum.multipleChoice">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.RegistrationQuestion.TypeEnum.shortAnswer">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee">
+            <summary>
+            Describes the attendee of a webinar
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.registrantKey">
+            <summary>
+            The key of the webinar attendee
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.sessionKey">
+            <summary>
+            The unique key of the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.email">
+            <summary>
+            The attendee's email address
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.attendanceTimeInSeconds">
+            <summary>
+            The total attendance time in seconds
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.attendance">
+            <summary>
+            The list of times the attendee joined and left the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.firstName">
+            <summary>
+            The attendee's first name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendee.lastName">
+            <summary>
+            The attendee's last name
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingAttendeeResponse">
+            <summary>
+            Describes a list of webinar attendees
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingAttendeeResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendeeResponse._embedded">
+            <summary>
+            The attendee array for a webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendeeResponse.page">
+            <summary>
+            The attendee page description. The first page is 0
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingAttendees">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingAttendees.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingAttendees.attendeeParticipationResponses">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingSession">
+            <summary>
+            Describes a completed webinar session.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingSession.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.sessionKey">
+            <summary>
+            The unique key of the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.webinarKey">
+            <summary>
+            The unique key of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.webinarName">
+            <summary>
+            The webinar name
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.startTime">
+            <summary>
+            The starting time of the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.endTime">
+            <summary>
+            The ending time of the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.registrantsAttended">
+            <summary>
+            The number of registrants who attended the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.registrantCount">
+            <summary>
+            The total number of registrants for the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.accountKey">
+            <summary>
+            The key of the account
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.creatingOrganizerKey">
+            <summary>
+            The key of the webinar organizer who scheduled the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.creatingOrganizerName">
+            <summary>
+            The name of the webinar organizer who scheduled the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.startingOrganizerKey">
+            <summary>
+            The key of the webinar organizer who started the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.startingOrganizerName">
+            <summary>
+            The name of the webinar organizer who started the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.totalPollCount">
+            <summary>
+            The total number of polls for the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.timeZone">
+            <summary>
+            The timezone where the webinar is taking place
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.experienceType">
+            <summary>
+            Specifies the experience type. The possible values are \"classic\", \"broadcast\" and \"simulive\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSession.webinarID">
+            <summary>
+            The 9-digit webinar ID
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingSessions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingSessions.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSessions.sessionInfoResources">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingSessionsResponse">
+            <summary>
+            Describes a list of webinar sessions
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingSessionsResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSessionsResponse._embedded">
+            <summary>
+            The sessions array for an organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingSessionsResponse.page">
+            <summary>
+            The sessions page description. The first page is 0
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingWebinars">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingWebinars.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingWebinars.webinars">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.ReportingWebinarsResponse">
+            <summary>
+            Describes a list of webinars for an account within a given date range
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.ReportingWebinarsResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingWebinarsResponse._embedded">
+            <summary>
+            The webinars array for an account within a given date range
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.ReportingWebinarsResponse.page">
+            <summary>
+            The webinars page description. The first page is 0
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.SecretKeyRequest">
+            <summary>
+            Representation of a secret key
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.SecretKeyRequest.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.SecretKeyRequest.validFrom">
+            <summary>
+            A date time in ISO8601 format, e.g. 2019-07-01T22:00:00Z. The secret key will be activated at the given date
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.SecretKeyResponse">
+            <summary>
+            Representation of a secret key
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.SecretKeyResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.SecretKeyResponse.id">
+            <summary>
+            The unique identifier for the secret key
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.SecretKeyResponse._value">
+            <summary>
+            The value of the secret key. This is used for generating a signature of events posted to the callback url
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.SecretKeyResponse.validFrom">
+            <summary>
+            A date time in ISO8601 format, e.g. 2019-07-01T22:00:00Z. The secret key will be activated at the given date
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.SelfPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.SelfPage.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.SelfPage.href">
+            <summary>
+            The current page link
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Session">
+            <summary>
+            Describes a completed webinar session.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Session.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Session.startTime">
+            <summary>
+            The starting time of the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Session.registrantsAttended">
+            <summary>
+            The number of registrants who attended the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Session.webinarKey">
+            <summary>
+            The unique key of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Session.webinarID">
+            <summary>
+            The 9-digit webinar ID
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Session.sessionKey">
+            <summary>
+            The unique key of the webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Session.endTime">
+            <summary>
+            The ending time of the webinar session
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.SessionPerformance">
+            <summary>
+            Describes performance details for webinar sessions
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.SessionPerformance.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.SessionPerformance.attendance">
+            <summary>
+            Attendance statistics for a webinar session
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.SessionPerformance.pollsAndSurveys">
+            <summary>
+            Polls and surveys for a webinar session
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.TollCountries">
+            <summary>
+            Defines in which countries toll PSTN numbers are available.
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.AT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.AU">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.BE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.CA">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.CH">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.DE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.DK">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.ES">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.FI">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.FR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.GB">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.IE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.IT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.NL">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.NO">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.NZ">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.SE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollCountries.US">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries">
+            <summary>
+            Countries in which toll free PSTN numbers are available.
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.AE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.AR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.AT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.AU">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.BE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.BG">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.BH">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.BR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.BY">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.CA">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.CH">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.CL">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.CN">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.CO">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.CZ">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.DE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.DK">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.ES">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.FI">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.FR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.GB">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.GR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.HK">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.HU">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.ID">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.IE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.IL">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.IN">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.IS">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.IT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.JP">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.KR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.LU">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.MX">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.MY">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.NL">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.NO">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.NZ">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.PA">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.PE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.PH">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.PL">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.PT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.RO">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.RU">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.SA">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.SE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.SG">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.TH">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.TR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.TW">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.UA">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.US">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.UY">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.VN">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.TollFreeCountries.ZA">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.UpdateUserSubscriptionsRequest">
+            <summary>
+            Describes a single user subscription update request
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.UpdateUserSubscriptionsRequest.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UpdateUserSubscriptionsRequest.callbackUrl">
+            <summary>
+            A HTTPs url that can accept posted events. It should return 200 OK for GET requests.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UpdateUserSubscriptionsRequest.webhookKey">
+            <summary>
+            The unique identifier for the webhook
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UpdateUserSubscriptionsRequest.userSubscriptionKey">
+            <summary>
+            The unique identifier for the user subscription
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UpdateUserSubscriptionsRequest.userSubscriptionState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.UpdateWebhooksRequest">
+            <summary>
+            Describes a single webhook update request
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.UpdateWebhooksRequest.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UpdateWebhooksRequest.callbackUrl">
+            <summary>
+            A HTTPs url that can accept posted events. It should return 200 OK for GET requests.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UpdateWebhooksRequest.webhookKey">
+            <summary>
+            The unique identifier for the webhook
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UpdateWebhooksRequest.state">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.UserSubscription">
+            <summary>
+            Describes a single user subscription
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.UserSubscription.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.callbackUrl">
+            <summary>
+            A HTTPs url that can accept posted events. It should return 200 OK for GET requests.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.eventName">
+            <summary>
+            Type of event of the webhook
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.eventVersion">
+            <summary>
+            Version of event being subscribed for
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.product">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.webhookKey">
+            <summary>
+            The unique identifier for the webhook
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.userSubscriptionKey">
+            <summary>
+            The unique identifier for the user subscription
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.userSubscriptionState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.activationState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscription.createTime">
+            <summary>
+            The create time of the webhook
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.UserSubscriptionResponse">
+            <summary>
+            Describes a list of user subscriptions
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.UserSubscriptionResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscriptionResponse._embedded">
+            <summary>
+            The user subscriptions array
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.UserSubscriptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.UserSubscriptions.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.UserSubscriptions.userSubscriptions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.UserSubscriptionState">
+            <summary>
+            State of the user subscription
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.UserSubscriptionState.INACTIVE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.UserSubscriptionState.ACTIVE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Webhook">
+            <summary>
+            Representation of a single webhook
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Webhook.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhook.callbackUrl">
+            <summary>
+            A HTTPs url that can accept posted events. It should return 200 OK for GET requests.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhook.eventName">
+            <summary>
+            Type of event for the webhook. Supported eventNames are registrant.added, registrant.joined, webinar.created, webinar.updated
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhook.eventVersion">
+            <summary>
+            Version of event being subscribed for. Supported eventVersion is 1.0.0
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhook.product">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhook.webhookKey">
+            <summary>
+            The unique identifier for the webhook
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhook.state">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhook.createTime">
+            <summary>
+            The create time of the webhook
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Webhooks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Webhooks.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webhooks.webhooks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebhooksResponse">
+            <summary>
+            List of webhooks
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.WebhooksResponse.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebhooksResponse._embedded">
+            <summary>
+            The webhooks array
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebhookState">
+            <summary>
+            State of the webhook
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebhookState.INACTIVE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebhookState.ACTIVE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Webinar">
+            <summary>
+            Describes a webinar
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.Webinar.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.webinarKey">
+            <summary>
+            The unique key of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.webinarID">
+            <summary>
+            The 9-digit webinar ID
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.organizerKey">
+            <summary>
+            The key of the webinar organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.accountKey">
+            <summary>
+            The key of the account
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.subject">
+            <summary>
+            The webinar subject
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.description">
+            <summary>
+            A short description of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.times">
+            <summary>
+            Array with startTime and endTime for the webinar sessions
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.timeZone">
+            <summary>
+            The timezone where the webinar is taking place
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.locale">
+            <summary>
+            The webinar language
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.approvalType">
+            <summary>
+            Specifies if the organizer needs to approve the webinar registrations. The possible values are \"AUTOMATIC\" and \"MANUAL\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.registrationUrl">
+            <summary>
+            The URL the webinar invitees can use to register
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.impromptu">
+            <summary>
+            A boolean flag indicating if the webinar type is impromptu
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.isPasswordProtected">
+            <summary>
+            A boolean flag indicating if the webinar is password protected
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.recurrenceType">
+            <summary>
+            Specifies the recurrence type. The possible values are \"single_session\", \"series\" and \"sequence\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.Webinar.experienceType">
+            <summary>
+            Specifies the experience type. The possible values are \"classic\", \"broadcast\" and \"simulive\".
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.Webinar.LocaleEnum">
+            <summary>
+            The webinar language
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Webinar.LocaleEnum.en_US">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Webinar.LocaleEnum.de_DE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Webinar.LocaleEnum.es_ES">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Webinar.LocaleEnum.fr_FR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Webinar.LocaleEnum.it_IT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.Webinar.LocaleEnum.zh_CN">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebinarByKey">
+            <summary>
+            Describes a webinar
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.webinarKey">
+            <summary>
+            The unique key of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.webinarID">
+            <summary>
+            The 9-digit webinar ID
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.subject">
+            <summary>
+            The webinar subject.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.description">
+            <summary>
+            A short description of the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.organizerKey">
+            <summary>
+            The key of the webinar organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.organizerEmail">
+            <summary>
+            The email of the webinar organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.organizerName">
+            <summary>
+            The name of the webinar organizer
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.times">
+            <summary>
+            Array with startTime and endTime for the webinar sessions
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.registrationUrl">
+            <summary>
+            The URL the webinar invitees can use to register
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.inSession">
+            <summary>
+            Indicates whether there is a webinar session currently in progress
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.impromptu">
+            <summary>
+            A boolean flag indicating if the webinar type is impromptu
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.type">
+            <summary>
+            Specifies the recurrence type. The possible values are \"single_session\", \"series\" and \"sequence\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.timeZone">
+            <summary>
+            The timezone where the webinar is taking place
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.numberOfRegistrants">
+            <summary>
+            The number of registrants at the webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.registrationLimit">
+            <summary>
+            The maximum number of registrants a webinar can have
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.locale">
+            <summary>
+            The webinar language
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.accountKey">
+            <summary>
+            The key of the account
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.recurrencePeriod">
+            <summary>
+            Specifies the recurrence type. The possible values are \"single_session\", \"series\" and \"sequence\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.experienceType">
+            <summary>
+            Specifies the experience type. The possible values are \"classic\", \"broadcast\" and \"simulive\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.isPasswordProtected">
+            <summary>
+            A boolean flag indicating if the webinar is password protected
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.LocaleEnum">
+            <summary>
+            The webinar language
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.LocaleEnum.en_US">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.LocaleEnum.de_DE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.LocaleEnum.es_ES">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.LocaleEnum.fr_FR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.LocaleEnum.it_IT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarByKey.LocaleEnum.zh_CN">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebinarEmailSettings">
+            <summary>
+            Describes email settings of a webinar.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.WebinarEmailSettings.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarEmailSettings.confirmationEmail">
+            <summary>
+            Describes confirmation email settings.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarEmailSettings.reminderEmail">
+            <summary>
+            Describes reminder email settings.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarEmailSettings.absenteeFollowUpEmail">
+            <summary>
+            Describes absentee follow-up email settings.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarEmailSettings.attendeeFollowUpEmail">
+            <summary>
+            Describes attendee follow-up email settings.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate">
+            <summary>
+            Describes the details used to create a new single session webinar.
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.subject">
+            <summary>
+            The name/subject of the webinar (128 characters maximum)
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.description">
+            <summary>
+            A short description of the webinar (2048 characters maximum)
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.times">
+            <summary>
+            Array with startTime and endTime for webinar. Since this call creates single session webinars, the array can only contain a single pair of startTime and endTime
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.timeZone">
+            <summary>
+            The time zone where the webinar is taking place (must be a valid time zone ID, see https://goto-developer.logmein.com/time-zones). If this parameter is not passed, the timezone of the organizer's profile will be used
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.type">
+            <summary>
+            Specifies the webinar type. The default type value is \"single_session\", which is used to create a single webinar session. The possible values are \"single_session\", \"series\", \"sequence\". If type is set to \"single_session\", a single webinar session is created. If type is set to \"series\", a webinar series is created. In this case 2 or more timeframes must be specified for each webinar. Example: \"times\": [{\"startTime\": \"...\", \"endTime\": \"...\"},{\"startTime\": \"...\", \"endTime\": \"...\"},{\"startTime\": \"...\", \"endTime\": \"...\"}. If type is set to \"sequence\" a sequence of webinars is created. The times object in the body must be replaced by the \"recurrenceStart\" object. Example: \"recurrenceStart\": {\"startTime\":\"2012-06-12T16:00:00Z\", \"endTime\": \"2012-06-12T17:00:00Z\" }.  The \"recurrenceEnd\" and \"recurrencePattern\" body parameter must be specified. Example: , \"recurrenceEnd\": \"2012-07-10\", \"recurrencePattern\": \"daily\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.isPasswordProtected">
+            <summary>
+            A boolean flag indicating if the webinar is password protected or not.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.recordingAssetKey">
+            <summary>
+            The recording asset with which the simulive webinar should be created from. In case the recordingasset was created as an online recording the simulive webinar settings, poll and surveys would be copied from the webinar whose session was recorded.
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.isOndemand">
+            <summary>
+            A boolean flag indicating if the webinar should be ondemand
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.experienceType">
+            <summary>
+            Specifies the experience type. The possible values are \"CLASSIC\", \"BROADCAST\" and \"SIMULIVE\".
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqCreate.emailSettings">
+            <summary>
+            Specifies email settings. This can be used to enable/disable reminder email, confirmation email and follow-up emails.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate">
+            <summary>
+            Describes the details of the webinar
+            </summary>
+        </member>
+        <member name="M:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.ToString">
+            <summary>
+            Returns a string representing the current object.
+            </summary>
+            <returns>The Json serialization of the current object.</returns>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.subject">
+            <summary>
+            The name/subject of the webinar (128 characters maximum)
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.description">
+            <summary>
+            A description of the webinar (2048 characters maximum)
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.times">
+            <summary>
+            Array with start and end time(s) for webinar
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.timeZone">
+            <summary>
+            The time zone where the webinar is taking place (must be a valid time zone ID, see https://goto-developer.logmein.com/time-zones). If this parameter is not passed, the timezone of the organizer's profile will be used
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.locale">
+            <summary>
+            The webinar language
+            </summary>
+        </member>
+        <member name="P:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.emailSettings">
+            <summary>
+            Specifies email settings. This can be used to enable/disable reminder email, confirmation email and follow-up emails.
+            </summary>
+        </member>
+        <member name="T:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.LocaleEnum">
+            <summary>
+            The webinar language
+            </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.LocaleEnum.en_US">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.LocaleEnum.de_DE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.LocaleEnum.es_ES">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.LocaleEnum.fr_FR">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.LocaleEnum.it_IT">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:LogMeIn.GoToWebinar.Api.Model.WebinarReqUpdate.LocaleEnum.zh_CN">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>

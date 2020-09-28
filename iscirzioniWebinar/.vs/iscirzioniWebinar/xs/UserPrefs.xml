@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{8E40A9DD-6612-42D2-8888-470E35C9B5A1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iscirzioniWebinar/Default.aspx.cs">
+    <Files>
+      <File FileName="iscirzioniWebinar/Default.aspx" Line="66" Column="112" IsPinned="True" />
+      <File FileName="iscirzioniWebinar/LocalitaItaliane.cs" IsPinned="True" />
+      <File FileName="iscirzioniWebinar/Default.aspx.cs" Line="19" Column="37" />
+      <File FileName="iscirzioniWebinar/style.css" />
+      <File FileName="iscirzioniWebinar/Global.asax.cs" />
+      <File FileName="iscirzioniWebinar/Cellulare.cs" />
+      <File FileName="iscirzioniWebinar/CodiceFiscale.cs" />
+      <File FileName="iscirzioniWebinar/script.js" />
+      <File FileName="iscirzioniWebinar/regioni.csv" />
+      <File FileName="iscirzioniWebinar/regioniProvincie.csv" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iscirzioniWebinar" expanded="True" selected="True">
+            <Node name="iscirzioniWebinar" expanded="True">
+              <Node name="Default.aspx" expanded="True" />
+              <Node name="Global.asax" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.iscirzioniWebinar PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

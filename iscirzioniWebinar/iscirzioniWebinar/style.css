@@ -1,0 +1,23 @@
+﻿div.container {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 5em;
+}
+
+.danger-color::-webkit-input-placeholder {
+    color: #d9534f;
+}
+
+img.img-size {
+    height : 10em;
+    width : 15em;
+}
+
+p.min-text {
+    font-size : 15px;
+}
+
+.label-error {
+    font-size: 15px;
+    text-decoration-color: #d9534f;
+}

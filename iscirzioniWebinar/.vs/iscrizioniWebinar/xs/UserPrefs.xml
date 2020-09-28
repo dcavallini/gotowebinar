@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{8E40A9DD-6612-42D2-8888-470E35C9B5A1}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iscirzioniWebinar/Default.aspx.cs">
+    <Files>
+      <File FileName="iscirzioniWebinar/Default.aspx" Line="16" Column="42" IsPinned="True" />
+      <File FileName="iscirzioniWebinar/congratsWebinar.aspx" IsPinned="True" />
+      <File FileName="iscirzioniWebinar/congratsWebinar.aspx.cs" />
+      <File FileName="iscirzioniWebinar/Default.aspx.cs" Line="526" Column="47" />
+      <File FileName="iscirzioniWebinar/Root.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iscrizioniWebinar" expanded="True">
+            <Node name="iscrizioniWebinar" expanded="True">
+              <Node name="imgs" expanded="True" />
+              <Node name="congratsWebinar.aspx" expanded="True" />
+              <Node name="Default.aspx" expanded="True">
+                <Node name="Default.aspx.cs" selected="True" />
+              </Node>
+              <Node name="Global.asax" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.iscrizioniWebinar PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

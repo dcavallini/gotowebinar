@@ -1,0 +1,15 @@
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/iscirzioniWebinar.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/iscirzioniWebinar.pdb
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/LogMeIn.GoToWebinar.NET.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/Newtonsoft.Json.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/Newtonsoft.Json.xml
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/LogMeIn.GoToWebinar.NET.xml
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscrizioniWebinar.csprojAssemblyReference.cache
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscrizioniWebinar.csproj.CoreCompileInputs.cache
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscrizioniWebinar.csproj.CopyComplete
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscirzioniWebinar.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/obj/Debug/iscirzioniWebinar.pdb
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/LogMeIn.GoToCoreLib.NET.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/RestSharp.dll
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/LogMeIn.GoToCoreLib.NET.xml
+/Users/davide/Projects/iscirzioniWebinar/iscirzioniWebinar/bin/RestSharp.xml

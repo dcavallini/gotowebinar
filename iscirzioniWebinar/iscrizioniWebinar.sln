@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iscrizioniWebinar", "iscirzioniWebinar\iscrizioniWebinar.csproj", "{8E40A9DD-6612-42D2-8888-470E35C9B5A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iscrizioniWebinarTests", "iscirzioniWebinar.Tests\iscrizioniWebinarTests.csproj", "{56741266-1580-48F1-896B-4055C8992DDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E40A9DD-6612-42D2-8888-470E35C9B5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E40A9DD-6612-42D2-8888-470E35C9B5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E40A9DD-6612-42D2-8888-470E35C9B5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E40A9DD-6612-42D2-8888-470E35C9B5A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56741266-1580-48F1-896B-4055C8992DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56741266-1580-48F1-896B-4055C8992DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56741266-1580-48F1-896B-4055C8992DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56741266-1580-48F1-896B-4055C8992DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

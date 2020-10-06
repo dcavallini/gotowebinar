@@ -81,6 +81,8 @@
     <Compile Include="congratsWebinar.aspx.designer.cs">
       <DependentUpon>congratsWebinar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OrganizationJson.cs" />
+    <Compile Include="ResponseCreationOrganization.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="imgs\" />

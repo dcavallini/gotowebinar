@@ -40,5 +40,4 @@ namespace iscirzioniWebinar
         public Embedded _embedded { get; set; }
     }
 
-
 }

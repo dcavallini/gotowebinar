@@ -1,22 +1,25 @@
 ﻿<Properties StartupConfiguration="{8E40A9DD-6612-42D2-8888-470E35C9B5A1}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iscirzioniWebinar/Default.aspx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iscirzioniWebinar/Default.aspx.cs">
     <Files>
-      <File FileName="iscirzioniWebinar/Default.aspx" Line="41" Column="128" IsPinned="True" />
       <File FileName="iscirzioniWebinar/congratsWebinar.aspx" Line="30" Column="5" IsPinned="True" />
-      <File FileName="iscirzioniWebinar/congratsWebinar.aspx.cs" Line="21" Column="15" />
-      <File FileName="iscirzioniWebinar/Root.cs" Line="1" Column="1" />
-      <File FileName="iscirzioniWebinar/Default.aspx.cs" Line="841" Column="83" />
-      <File FileName="iscirzioniWebinar/LocalitaItaliane.cs" Line="45" Column="34" />
-      <File FileName="iscirzioniWebinar/script.js" Line="12" Column="72" />
+      <File FileName="iscirzioniWebinar/Default.aspx" Line="111" Column="155" IsPinned="True" />
+      <File FileName="iscirzioniWebinar/Default.aspx.cs" Line="814" Column="1" />
+      <File FileName="iscirzioniWebinar/congratsWebinar.aspx.cs" />
+      <File FileName="iscirzioniWebinar/Root.cs" />
+      <File FileName="iscirzioniWebinar/LocalitaItaliane.cs" />
+      <File FileName="iscirzioniWebinar/script.js" />
+      <File FileName="iscirzioniWebinar/OrganizationJson.cs" />
+      <File FileName="iscirzioniWebinar/ResponseCreationOrganization.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="iscrizioniWebinar" expanded="True">
             <Node name="iscrizioniWebinar" expanded="True">
-              <Node name="imgs" expanded="True" />
               <Node name="congratsWebinar.aspx" expanded="True" />
-              <Node name="Default.aspx" expanded="True" selected="True" />
+              <Node name="Default.aspx" expanded="True">
+                <Node name="Default.aspx.cs" selected="True" />
+              </Node>
               <Node name="Global.asax" expanded="True" />
             </Node>
           </Node>
@@ -24,11 +27,6 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="iscrizioniWebinar" expanded="True" selected="True" />
-        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

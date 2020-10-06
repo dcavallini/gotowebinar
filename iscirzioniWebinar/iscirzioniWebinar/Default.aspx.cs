@@ -11,18 +11,17 @@ namespace iscirzioniWebinar
 {
     public partial class Default : System.Web.UI.Page
     {
-        protected string access_token = "eyJraWQiOiJvYXV0aHYyLmxtaS5jb20uMDIxOSIsImFsZyI6IlJTNTEyIn0.eyJzYyI6ImNvbGxhYjoiLCJvZ24iOiJwd2QiLCJhdWQiOiJhMTIzZTE0ZS00ZmI3LTQzMGYtODM5NS02MzE0NjQzZmQ3MzAiLCJzdWIiOiI2MzAxOTMzNzE2OTgxMDc4MDIyIiwianRpIjoiZmJmMjNkMmItNmMwOS00YWIwLTllNTctNjE3ZjY1NWY2MDc1IiwiZXhwIjoxNjAwNzYxMDc5LCJpYXQiOjE2MDA3NTc0NzksInR5cCI6ImEifQ.LZVWjltzbzjXhzhmlDIlqFyxcx8NQ78fAP6RUPqiiaWTpC9Z32JG437cHp_NlXhYuoQmRft - 84fJoljyKLGP_iO-KJmExlLMIHCYrL2uQKXCJGpv0rnSnUC91BfRBYkDURJ1e3oIA_AGxG6Xv-mMdwqJKBX-XtO34FD9SYIfTGtV4sqAbUOzUJVaxmmi_-ykBcZn8h2WaS3oo1qLbk_peM3ynHyIA7kYizxTF2l_Xf_Ty8_RsJXHp5UTbSoAX4mpQk9JdgEb4XBWy8z4t8xEfuzCplajPzaGVBDG7CRSaof7HypZSbdu9oTNIwy7r893fX_R7mHiMCjprJ2-SBXyGg";
-        protected string refresh_token = "eyJraWQiOiJvYXV0aHYyLmxtaS5jb20uMDIxOSIsImFsZyI6IlJTNTEyIn0.eyJzYyI6ImNvbGxhYjoiLCJscyI6IjkwNWJhNTIwLTQwMGYtNDI0MS1hZjlmLTc1OTEyMGI3NTg1ZSIsIm9nbiI6InB3ZCIsImF1ZCI6ImExMjNlMTRlLTRmYjctNDMwZi04Mzk1LTYzMTQ2NDNmZDczMCIsInN1YiI6IjYzMDE5MzM3MTY5ODEwNzgwMjIiLCJqdGkiOiIzOGNjMjg1Ny1lM2Q2LTQ2NGEtYjgyNC0zNWJjZDQwN2JiN2MiLCJleHAiOjE2MDMzNDkzOTcsImlhdCI6MTYwMDc1NzM5NywidHlwIjoiciJ9.XE3rOkBz3jpSjau6c7-8tjMIlyc6wEdzXtRGh6Slt0NpT21eEs2NrvBMLCHN5oLmYPRoqV0BEFxdOtEusz-7uG0HRzSd2I1qTWRV2aWC6Op1Z_UWC05fh6QvELNIo9GdhonF5sJLDMv8C5Q0CHfwzsoqmz6Z0LfK97vb8FtISriiGVlROt6eXhrL_asjQj8cek7xozOaT70j070zrJyX_khoxk_tRbA4dW_lpomtE7xGJ4blN9ztxbK88iUr9kyQgxmZIhlMuS5nARIXWr57oOrz2ZwLvZ53uQW-no9zfySCooshC9XiWGgqTRIm6UQNomESGkjZ7jdLP4WtyBXXEQ"; // => "d1cp20yB3hrFAKeTokenTr49EZ34kTvNK"
+        protected string access_token = "eyJraWQiOiJvYXV0aHYyLmxtaS5jb20uMDIxOSIsImFsZyI6IlJTNTEyIn0.eyJzYyI6ImNvbGxhYjoiLCJscyI6IjY4NTkzN2M1LTE1ZGItNDIwMS05NGUwLTVkNjM0MmVlYzQ4NCIsIm9nbiI6InB3ZCIsImF1ZCI6ImRkMWQ3NzZmLTM3ODgtNGQ2MS05YmQxLTUyMGNkNWQ5MTU0ZiIsInN1YiI6IjYzMDE5MzM3MTY5ODEwNzgwMjIiLCJqdGkiOiJkN2U3ZTlhNS1hNmZkLTQyNzMtODk3NS03NGRiYTg1YWM4ZmQiLCJleHAiOjE2MDE5MTUyNjYsImlhdCI6MTYwMTkxMTY2NiwidHlwIjoiYSJ9.i2WL47NjgoD-_0g06eFpYoC49hKezZhjv2Ccj2L4Yk31nGHTmGnBl9G38EyV-39pvtQEspkDxlnDdUjGiLNUSTJByZr39VbktS2EbQIwuDL8_RmW-Xo6v8TRafIxQkx77v7rNvxvL-7ljQfw2vib4h5WA3kTIdnRM5WXFkIJUSEs3koV8Nx-l-8T4Yb-t7IyTWCFyf29U-QfjKbLDxjf1vH77Jb_MXLWQ_xcMRQxOQQV1LSCsjQunm3kUia99CgMX827WpTYvopgp6cis_q0YuO1Mq_TLMjqHd5PQsnvzKs6YxTjFGqJw_CF5eXWzCeCxxXtNxKCyKuSoArwsC-_3Q";
+        protected string refresh_token = "eyJraWQiOiJvYXV0aHYyLmxtaS5jb20uMDIxOSIsImFsZyI6IlJTNTEyIn0.eyJzYyI6ImNvbGxhYjoiLCJscyI6IjY4NTkzN2M1LTE1ZGItNDIwMS05NGUwLTVkNjM0MmVlYzQ4NCIsIm9nbiI6InB3ZCIsImF1ZCI6ImRkMWQ3NzZmLTM3ODgtNGQ2MS05YmQxLTUyMGNkNWQ5MTU0ZiIsInN1YiI6IjYzMDE5MzM3MTY5ODEwNzgwMjIiLCJqdGkiOiI5YTE4NjA5NS1lOTMyLTRmMGItYjM4My00NGRhMjcxNmI5ZjYiLCJleHAiOjE2MDQ1MDM2NjYsImlhdCI6MTYwMTkxMTY2NiwidHlwIjoiciJ9.RmJNu_WSyeonSIckc0yEu9HTeDU9zlyvIaURq_81t0x7nbCSS0kLajpkE0BYEsG3y9_-aRu9NixeMznWqPdHZ0AvBM21WlVTqyHl1wQP-n4WzILExwzAIJyTK_khEF-9VngdbcksqJMsErPsBxkSJqOaU4jQ_3obNHp8Xru2FM9BvXFHRjlafqO-Tx95ZYjI5NjeKOfIcjBP92cpgMEiod7jVCwdfrFJIT0V_IUG344y_jIbYILNateDWHGO7xWlJWbmbjMzuEsFPHWbUZlNEorx6TDkHUFeuJKOkg06IsewA-1PZxmTPmpUMs8Hivhx8Hic1C7tKIEZ3BmZuVf5zw"; // => "d1cp20yB3hrFAKeTokenTr49EZ34kTvNK"
         protected string account_key = "1331643080583618309";
         protected string organizer_key = "6301933716981078022";
-        protected string webinarID;
+        //protected string webinarID;
+        protected string webinarKey;
         protected Webinar webinar;
         protected string pipedrive_token = "ca504e05a6054a8f0b982b643a830e604b30ad0d"; //token che va cambiato a seconda di quale account si utilizza
 
         public void Page_Load(object sender, EventArgs args)
         {
-            //siCrediti.Visible = false;
-            //noCrediti.Visible = false;
             LocalitaItaliane li = new LocalitaItaliane();
             inputProvincia.DataSource = li.GetProvincie();
             inputProvincia.DataBind();
@@ -32,10 +31,8 @@ namespace iscirzioniWebinar
 
             try
             {
-                //http://127.0.0.1:8080/?code=eyJraWQiOiJvYXV0aHYyLmxtaS5jb20uMDIxOSIsImFsZyI6IlJTNTEyIn0.eyJscyI6ImY0MzhjZmFhLWI0MTQtNGQ5OS1iZWZlLTA0ZmRkMzEyMDhhMCIsIm9nbiI6InB3ZCIsInNjIjoiY29sbGFiOiIsImF1ZCI6ImExMjNlMTRlLTRmYjctNDMwZi04Mzk1LTYzMTQ2NDNmZDczMCIsInN1YiI6IjYzMDE5MzM3MTY5ODEwNzgwMjIiLCJqdGkiOiIyYmUzMmM3OS00YjE4LTQyZDgtODkxMC1iNjM5ODRkNDI2YmYiLCJleHAiOjE2MDA5MzkwMTYsImlhdCI6MTYwMDkzODQxNiwidHlwIjoiYyJ9.DeTFMF6Oc9zcX0VFfHBDwX43tET-oLcE0IFhXxUkWMjstfiI02Lb1hzK0M3NoXqg_kh9i1zqcD2MpkSIZyf4ZZjeQz9OOz-kqq348PgVEtwPf8SSkcx0qPAo-Hb7zCjvQak9MXOXmMDrG5Pd2bs2JjNRhlb6yd4GdkRGeHE_f8RAElt_DrNvK-GetVEDbA3tpCmwlUh0TVgEUJ7OAwjxUgx4tVhGbkc_gkIjUXoPOAkxgV30fAEX7hQH2s-2tDClJIOkEhr-iqxKyFIX_e4hZuhfaQvGLHIcddC_Y0eU57B9FKViCHsgjX76GRWnawbeeBhQB6KSqaYeCjyrHQYYMg&webinar_id=459301075
-                //webinarID = HttpUtility.ParseQueryString(HttpContext.Current.Request.Url.AbsoluteUri).Get("webinar_id");
-
-                webinarID = Request.QueryString["webinar_id"];
+                //webinarID = Request.QueryString["webinar_id"];
+                webinarKey = Request.QueryString["webinar_key"];
 
                 RefreshTokenGTW();
 
@@ -45,9 +42,8 @@ namespace iscirzioniWebinar
 
                 descrizioneWebinar.InnerText = webinar.description;
 
-                //relatoriWebinar.InnerText = webi
             }
-            catch (Exception ex)
+            catch (Exception ex)//se l'iscrizione al webinar avviene correttamente devo comunque passare alla pagina oppure no?!?!
             {
                 Console.WriteLine(ex.ToString());
             }
@@ -63,9 +59,9 @@ namespace iscirzioniWebinar
                     //devo fare un check se la mail risultà già iscritta a quel webinar
                     string registrant = CreateRegistrantForWebinar(webinar.webinarKey);
 
-                    string organizor = CreateOrganizationPipeDrie();//da provare ma in console va
+                    //GetOrganizationsPipeDrive();
 
-                    Response.Redirect("congratsWebinar.aspx?subject=" + webinar.subject + "&start=" + webinar.times[0].startTime + "&end=" + webinar.times[0].endTime); //le api non restituisco il link per la partecipazione
+                    Response.Redirect("congratsWebinar.aspx?subject=" + webinar.subject + "&start=" + webinar.times[0].startTime + "&end=" + webinar.times[0].endTime);
 
                 }
                 catch (Exception ex)
@@ -80,7 +76,7 @@ namespace iscirzioniWebinar
 
         }
 
-        private bool Controlli()//da aggiungere il controllo sulla dpr
+        private bool Controlli()//da aggiungere il controllo sulla dpr(maybe)
         {
             ControlloNome();
             ControlloCognome();
@@ -92,16 +88,22 @@ namespace iscirzioniWebinar
 
             if (txtNome.Text == "" || txtCognome.Text == "" || txtMail.Text == "" || txtCF.Text == "" || !checkPrivacy.Checked || inputProvincia.Text == "" || !isEmail(txtMail.Text))
             {
+                radioNo.Checked = false;
+                radioSi.Checked = false;
                 return false;
             }
             else if (!VerificaCodiceFiscale(txtCF.Text))
             {
+                radioNo.Checked = false;
+                radioSi.Checked = false;
                 return false;
             }
             else if (txtPIVA.Text != "")
             {
                 if (!VerificaPartitaIva(txtPIVA.Text))
                 {
+                    radioNo.Checked = false;
+                    radioSi.Checked = false;
                     return false;
                 }
             }
@@ -109,6 +111,8 @@ namespace iscirzioniWebinar
             {
                 if (!Cellulare.CheckLunghezza(txtTelefono.Text) || !Cellulare.CheckNumeri(txtTelefono.Text))
                 {
+                    radioNo.Checked = false;
+                    radioSi.Checked = false;
                     return false;
                 }
             }
@@ -287,7 +291,6 @@ namespace iscirzioniWebinar
             }
 
         }
-
 
         //private void ControlloPrivacy()
         //{
@@ -509,7 +512,7 @@ namespace iscirzioniWebinar
             }
         }
 
-        public static bool isEmail(string inputEmail)//da verificare
+        public static bool isEmail(string inputEmail)
         {
             string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
                   @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
@@ -821,7 +824,8 @@ namespace iscirzioniWebinar
 
             foreach (Webinar w in myDeserializedClass._embedded.webinars)
             {
-                if (w.webinarID == webinarID)//da chiedere come si può serializzare una cosa del genere
+                //if (w.webinarID == webinarID)//da chiedere come si può serializzare una cosa del genere
+                if(w.webinarKey == webinarKey)
                 {
                     webinarDaGestire = w;
                 }
@@ -832,13 +836,36 @@ namespace iscirzioniWebinar
 
         private string CreateRegistrantForWebinar(string webinar_key)
         {
+            string note = txtCF.Text.ToUpper();
+            string telefono = "";
+            string ragioneSociale = "";
+            if (txtTelefono.Text != "")
+            {
+                telefono = txtTelefono.Text;
+            }
+            if (txtRagioneSociale.Text != "")
+            {
+                ragioneSociale = txtRagioneSociale.Text;
+            }
+            if (txtPIVA.Text != "")
+            {
+                note += ";" + txtPIVA.Text;
+            }
+            if (radioSi.Checked)
+            {
+                note += ";" + inputOrdine.Text + ";" + txtNumeroOrdine.Text;
+            }
+            if (radioNo.Checked)
+            {
+                note += ";" + inputProvincia.Text;
+            }
             var client = new RestClient("https://api.getgo.com/G2W/rest/v2/organizers/" + organizer_key + "/webinars/" + webinar_key + "/registrants");
             client.Timeout = -1;
             var request = new RestRequest(Method.POST);
             request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
             request.AddHeader("Accept", "application/json");
             request.AddParameter("application/x-www-form-urlencoded", "{\n  \"firstName\": " + txtNome.Text + ",\n  \"lastName\": " + "\"" + txtCognome.Text + "\"" + ",\n  \"email\": "
-                + "\"" + txtMail.Text + "\"," + "\n}", ParameterType.RequestBody);
+                + "\"" + txtMail.Text + "\", \n \"questionsAndComments\" :" + "\"" + note + "\"," + "\n \"organization\" :" + "\"" + ragioneSociale + "\"," + "\n \"phone\" :" + "\"" + telefono + "\"," + "\n}", ParameterType.RequestBody);
             request.AddParameter("Authorization", "Bearer " + access_token, ParameterType.HttpHeader);
             IRestResponse response = client.Execute(request);
 
@@ -866,8 +893,8 @@ namespace iscirzioniWebinar
 
         private void RefreshTokenGTW()
         {
-            string clientId = "a123e14e-4fb7-430f-8395-6314643fd730";
-            string clientSecret = "SiycgLz9pyWHlPfGKWbUow==";
+            string clientId = "dd1d776f-3788-4d61-9bd1-520cd5d9154f";
+            string clientSecret = "BdtKdB7iqbNiZitHowB3SQ==";
             var oauth2Api = new OAuth2Api(clientId, clientSecret);
             var tokenResponse = oauth2Api.GetAccessTokenUsingRefreshToken(refresh_token);
 
@@ -877,59 +904,124 @@ namespace iscirzioniWebinar
             organizer_key = tokenResponse.organizer_key;
         }
 
-        private string CreateOrganizationPipeDrie()
-        {
-            var client = new RestClient("https://api.pipedrive.com/v1/organizations?api_token=" + pipedrive_token);
-            client.Timeout = -1;
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Accept", "application/json");
-            request.AddParameter("application/x-www-form-urlencoded", "{\n  \"name\": \"" + txtNome.Text + " " + txtCognome.Text +  "\" }", ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-            //Console.WriteLine(response.Content);
+        //private void GetOrganizationsPipeDrive()
+        //{
+        //    var client = new RestClient("https://api.pipedrive.com/v1/organizations/search?term=" + txtCF.Text.ToUpper() + "&start=0&api_token=" + pipedrive_token);
+        //    client.Timeout = -1;
+        //    var request = new RestRequest(Method.GET);
+        //    request.AddHeader("Content-Type", "application/json");
+        //    IRestResponse response = client.Execute(request);
 
-            //Organization org = JsonConvert.DeserializeObject<Organization>(response.Content);
+        //    OrganizationJson myDeserializedClass = JsonConvert.DeserializeObject<OrganizationJson>(response.Content);
 
-            //return CreateActivityForUserPipeDrive(org.data.id);
+        //    if (myDeserializedClass.data.items.Count == 0) //se non ho trovato nessuna organizzazione vuol dire che non ne esiste nessuna e quindi la creo
+        //    {
+        //       string s = CreateOrganizationPipeDrive();
+        //    }
+        //    else
+        //    {
+        //        string PIVATroncata = txtPIVA.Text.TrimStart(new Char[] { '0' });
 
-            return response.Content;
-        }
+        //        foreach (Item i in myDeserializedClass.data.items)
+        //        {
+        //            foreach (string s in i.item.custom_fields)
+        //            {
+        //                if (s == PIVATroncata)
+        //                {
+        //                    CreateNoteForOrganizorPipeDrive(i.item.id);
+        //                }
+        //            }
+        //        }
+        //    }
 
-        private string CreateActivityForUserPipeDrive(int org_id)
-        {
-            string note = "email : " + txtMail.Text + ", " + "CF : " + txtCF.Text.ToUpper();
-            if (txtTelefono.Text != "")
-            {
-                note += ", telefono : " + txtTelefono.Text;
-            }
-            if (txtRagioneSociale.Text != "")
-            {
-                note += " , ragione sociale : " + txtRagioneSociale.Text;
-            }
-            if (txtPIVA.Text != "")
-            {
-                note += " , Partita IVA : " + txtPIVA.Text;
-            }
-            if (radioSi.Checked)
-            {
-                note += " , Ordine di appartenenza : " + inputOrdine.Text + " , numero :" + txtNumeroOrdine.Text;
-            }
-            if (radioNo.Checked)
-            {
-                note += ", Provincia : " +  inputProvincia.Text;
-            }
-            //aggiungere anche l'if che permette di capire se è stata inserita la provicia
-            //voglio capire se mettere anche l'ordine di appartenenza, anche se ha senso metterlo
-            var client = new RestClient("https://api.pipedrive.com/v1/activities?api_token=" + pipedrive_token);
-            client.Timeout = -1;
-            var request = new RestRequest(Method.POST);
-            request.AddHeader("Content-Type", "application/json");
-            request.AddHeader("Accept", "application/json");
-            request.AddParameter("application/x-www-form-urlencoded", "{\n  \"due-date\": \"" + DateTime.Now.ToString() + "\",\n \"org_id\": \"" + org_id + "\",\n \"note\":\"" + note + "\",\n \"subject\":\"compilazione webinar " + webinar.subject +  "\" }", ParameterType.RequestBody);
-            IRestResponse response = client.Execute(request);
-            return response.Content;
-        }
+        //}
 
+        //private string CreateOrganizationPipeDrive()//da vedere come si aggiungo i custom fields, che dovrebbero essere sempre gli stessi
+        //{
+        //    var client = new RestClient("https://api.pipedrive.com/v1/organizations?api_token=" + pipedrive_token);
+        //    client.Timeout = -1;
+        //    var request = new RestRequest(Method.POST);
+        //    request.AddHeader("Content-Type", "application/json");
+        //    request.AddHeader("Accept", "application/json");
+        //    request.AddParameter("application/x-www-form-urlencoded", "{\n  \"name\": \"" + txtNome.Text + " " + txtCognome.Text +  "\" }", ParameterType.RequestBody);
+        //    IRestResponse response = client.Execute(request);
+
+        //    ResponseCreationOrganization resp = JsonConvert.DeserializeObject<ResponseCreationOrganization>(response.Content);
+
+        //    CreateNoteForOrganizorPipeDrive(resp.data.id);
+
+        //    return response.Content;
+        //}
+
+        //private void CreateNoteForOrganizorPipeDrive(int org_id)//da testare
+        //{
+        //    string note = "Compilazione Webinar " + webinar.subject + " => email : " + txtMail.Text + ", " + "CF : " + txtCF.Text.ToUpper();
+        //    if (txtTelefono.Text != "")
+        //    {
+        //        note += ", telefono : " + txtTelefono.Text;
+        //    }
+        //    if (txtRagioneSociale.Text != "")
+        //    {
+        //        note += " , ragione sociale : " + txtRagioneSociale.Text;
+        //    }
+        //    if (txtPIVA.Text != "")
+        //    {
+        //        note += " , Partita IVA : " + txtPIVA.Text;
+        //    }
+        //    if (radioSi.Checked)
+        //    {
+        //        note += " , Ordine di appartenenza : " + inputOrdine.Text + " , numero :" + txtNumeroOrdine.Text;
+        //    }
+        //    if (radioNo.Checked)
+        //    {
+        //        note += ", Provincia : " + inputProvincia.Text;
+        //    }
+
+        //    var client = new RestClient("https://api.pipedrive.com/v1/notes?api_token=" + pipedrive_token);
+        //    client.Timeout = -1;
+        //    var request = new RestRequest(Method.POST);
+        //    request.AddHeader("Accept", "application/json");
+        //    request.AddHeader("Content-Type", "application/json");
+        //    request.AddParameter("application/application/x-www-form-urlencoded", "{\n \"content\": \"" + note + "\",\n \"org_id\": "+ org_id + "\n}", ParameterType.RequestBody);
+        //    IRestResponse response = client.Execute(request);
+        //}
+
+        #region non creo piu un activity ma solo una nota, poi verrà creata quando risponderò al survey
+        //private string CreateActivityForUserPipeDrive(int org_id)
+        //{
+        //    string note = "email : " + txtMail.Text + ", " + "CF : " + txtCF.Text.ToUpper();
+        //    if (txtTelefono.Text != "")
+        //    {
+        //        note += ", telefono : " + txtTelefono.Text;
+        //    }
+        //    if (txtRagioneSociale.Text != "")
+        //    {
+        //        note += " , ragione sociale : " + txtRagioneSociale.Text;
+        //    }
+        //    if (txtPIVA.Text != "")
+        //    {
+        //        note += " , Partita IVA : " + txtPIVA.Text;
+        //    }
+        //    if (radioSi.Checked)
+        //    {
+        //        note += " , Ordine di appartenenza : " + inputOrdine.Text + " , numero :" + txtNumeroOrdine.Text;
+        //    }
+        //    if (radioNo.Checked)
+        //    {
+        //        note += ", Provincia : " +  inputProvincia.Text;
+        //    }
+        //    //aggiungere anche l'if che permette di capire se è stata inserita la provicia
+        //    //voglio capire se mettere anche l'ordine di appartenenza, anche se ha senso metterlo
+        //    var client = new RestClient("https://api.pipedrive.com/v1/activities?api_token=" + pipedrive_token);
+        //    client.Timeout = -1;
+        //    var request = new RestRequest(Method.POST);
+        //    request.AddHeader("Content-Type", "application/json");
+        //    request.AddHeader("Accept", "application/json");
+        //    request.AddParameter("application/x-www-form-urlencoded", "{\n  \"due-date\": \"" + DateTime.Now.ToString() + "\",\n \"org_id\": \"" + org_id + "\",\n \"note\":\"" + note + "\",\n \"subject\":\"compilazione webinar " + webinar.subject +  "\" }", ParameterType.RequestBody);
+        //    IRestResponse response = client.Execute(request);
+        //    return response.Content;
+        //}
+        #endregion
 
     }
 }

@@ -108,7 +108,7 @@
                 <div class="row-md-12">
                     <div class="custom-control custom-checkbox mb-3">
                         <input type="checkbox" class="custom-control-input" Text="" id="checkPrivacy" runat="server" onchange="changeValue()">
-                        <label class="custom-control-label" for="checkPrivacy">Ho preso visione della nota <a href='https://fondoperduto.bluenext.it/fondoperduto/Risorse/informativaprivacy.pdf'>Informativa sulla Privacy</a>. Se fai clic su questo pulsante, i tuoi dati saranno inviati all'organizzatore del webinar che li utilizzer&agrave per le comunicazioni relative a questo evento e ad altri suoi servizi.*</label>
+                        <label class="custom-control-label" for="checkPrivacy">Ho preso visione della nota <a href='http://www.bluenext.it/privacy-policy/'>Informativa sulla Privacy</a>. Se fai clic su questo pulsante, i tuoi dati saranno inviati all'organizzatore del webinar che li utilizzer&agrave per le comunicazioni relative a questo evento e ad altri suoi servizi.*</label>
                         <div class="invalid-feedback">Campo obbligatorio</div>
                     </div>
                 </div>
